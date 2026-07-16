@@ -1,0 +1,444 @@
+{
+  "website": {
+    "name": "John Doe",
+    "logo": "https://picsum.photos/seed/logo/200/200",
+    "favicon": "https://picsum.photos/seed/favicon/64/64",
+    "title": "John Doe | Full Stack Developer",
+    "description": "Professional Full Stack Developer specializing in React, Laravel, and API Development.",
+    "keywords": "React, Laravel, Full Stack, Developer, Portfolio, Web Development, API",
+    "author": "John Doe",
+    "theme": "light",
+    "version": "1.0.0"
+  },
+  "navigation": [
+    { "name": "Home", "hash": "#home" },
+    { "name": "About", "hash": "#about" },
+    { "name": "Skills", "hash": "#skills" },
+    { "name": "Services", "hash": "#services" },
+    { "name": "Experience", "hash": "#experience" },
+    { "name": "Projects", "hash": "#projects" },
+    { "name": "Contact", "hash": "#contact" }
+  ],
+  "hero": {
+    "name": "John Doe",
+    "designation": "Full Stack Developer",
+    "subtitle": "I build modern, scalable web applications with React & Laravel.",
+    "description": "Passionate developer with 5+ years of experience crafting digital experiences. Specializing in React, Laravel, and API development.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&crop=face",
+    "buttons": {
+      "hire": "#contact",
+      "resume": "#resume",
+      "projects": "#projects"
+    },
+    "social": {
+      "github": "https://github.com/johndoe",
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "twitter": "https://twitter.com/johndoe",
+      "instagram": "https://instagram.com/johndoe"
+    }
+  },
+  "about": {
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop&crop=face",
+    "title": "About Me",
+    "description": "I'm a Full Stack Developer with a passion for creating beautiful, functional, and user-friendly web applications. I have 5+ years of experience working with modern technologies.",
+    "objective": "To leverage my skills in React and Laravel to build innovative solutions that solve real-world problems and deliver exceptional user experiences.",
+    "personal": {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "phone": "+1 234 567 890",
+      "address": "San Francisco, CA",
+      "experience": "5+ Years",
+      "projects": "50+",
+      "clients": "30+",
+      "location": "USA"
+    },
+    "languages": ["English", "Spanish", "French"],
+    "resume": "/resume.pdf"
+  },
+  "statistics": [
+    { "icon": "FaBriefcase", "value": "5+", "label": "Years Experience" },
+    { "icon": "FaProjectDiagram", "value": "50+", "label": "Projects Completed" },
+    { "icon": "FaUsers", "value": "30+", "label": "Happy Clients" },
+    { "icon": "FaCode", "value": "20+", "label": "Technologies" }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Frontend",
+        "skills": [
+          { "name": "React.js", "percentage": 95, "icon": "FaReact" },
+          { "name": "Next.js", "percentage": 85, "icon": "SiNextdotjs" },
+          { "name": "JavaScript", "percentage": 90, "icon": "FaJs" },
+          { "name": "TypeScript", "percentage": 80, "icon": "SiTypescript" },
+          { "name": "HTML5", "percentage": 95, "icon": "SiHtml5" },
+          { "name": "CSS3", "percentage": 90, "icon": "SiCss3" }
+        ]
+      },
+      {
+        "name": "Backend",
+        "skills": [
+          { "name": "Laravel", "percentage": 90, "icon": "SiLaravel" },
+          { "name": "Node.js", "percentage": 80, "icon": "FaNode" },
+          { "name": "PHP", "percentage": 85, "icon": "FaPhp" },
+          { "name": "Python", "percentage": 70, "icon": "FaPython" }
+        ]
+      },
+      {
+        "name": "Database",
+        "skills": [
+          { "name": "MySQL", "percentage": 85, "icon": "SiMysql" },
+          { "name": "PostgreSQL", "percentage": 75, "icon": "SiPostgresql" },
+          { "name": "MongoDB", "percentage": 70, "icon": "SiMongodb" }
+        ]
+      },
+      {
+        "name": "Tools",
+        "skills": [
+          { "name": "Git", "percentage": 90, "icon": "FaGit" },
+          { "name": "Docker", "percentage": 70, "icon": "SiDocker" },
+          { "name": "AWS", "percentage": 65, "icon": "SiAmazonaws" },
+          { "name": "VS Code", "percentage": 95, "icon": "SiVisualstudiocode" }
+        ]
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Web Development",
+      "description": "Full-stack web development using modern frameworks like React and Laravel.",
+      "icon": "FaGlobe"
+    },
+    {
+      "title": "React Development",
+      "description": "Building interactive, high-performance single-page applications with React.",
+      "icon": "FaReact"
+    },
+    {
+      "title": "Laravel Development",
+      "description": "Scalable backend solutions using Laravel framework with RESTful APIs.",
+      "icon": "SiLaravel"
+    },
+    {
+      "title": "API Development",
+      "description": "Designing and building robust RESTful and GraphQL APIs.",
+      "icon": "FaApi"
+    },
+    {
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile apps using React Native.",
+      "icon": "FaMobileAlt"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Creating beautiful, intuitive user interfaces with focus on user experience.",
+      "icon": "FaPaintBrush"
+    }
+  ],
+  "experience": [
+    {
+      "company": "TechCorp Inc.",
+      "position": "Senior Full Stack Developer",
+      "duration": "2022 - Present",
+      "location": "San Francisco, CA",
+      "description": "Leading a team of 8 developers building enterprise-scale applications. Implemented microservices architecture and improved performance by 40%.",
+      "technologies": ["React", "Laravel", "AWS", "Docker"],
+      "logo": "https://picsum.photos/seed/techcorp/200/200"
+    },
+    {
+      "company": "WebSolutions LLC",
+      "position": "Full Stack Developer",
+      "duration": "2020 - 2022",
+      "location": "Austin, TX",
+      "description": "Developed and maintained multiple client projects. Built RESTful APIs and responsive frontend interfaces.",
+      "technologies": ["React", "Node.js", "MySQL", "Git"],
+      "logo": "https://picsum.photos/seed/websolutions/200/200"
+    },
+    {
+      "company": "StartupHub",
+      "position": "Junior Developer",
+      "duration": "2019 - 2020",
+      "location": "Remote",
+      "description": "Assisted in building MVP for various startups. Worked with React and Laravel stacks.",
+      "technologies": ["React", "Laravel", "PHP", "Bootstrap"],
+      "logo": "https://picsum.photos/seed/startuphub/200/200"
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Computer Science",
+      "college": "Stanford University",
+      "university": "Stanford",
+      "year": "2017 - 2019",
+      "description": "Specialized in Software Engineering and Distributed Systems.",
+      "logo": "https://picsum.photos/seed/stanford/200/200"
+    },
+    {
+      "degree": "B.Sc. in Computer Science",
+      "college": "MIT",
+      "university": "Massachusetts Institute of Technology",
+      "year": "2013 - 2017",
+      "description": "Computer Science with focus on Web Technologies and Algorithms.",
+      "logo": "https://picsum.photos/seed/mit/200/200"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "AWS Certified Developer",
+      "organization": "Amazon Web Services",
+      "year": "2023",
+      "image": "https://picsum.photos/seed/aws/400/400",
+      "verify": "https://aws.amazon.com/verify"
+    },
+    {
+      "title": "Meta React Developer",
+      "organization": "Meta",
+      "year": "2022",
+      "image": "https://picsum.photos/seed/react/400/400",
+      "verify": "https://www.coursera.org/verify"
+    },
+    {
+      "title": "Laravel Certification",
+      "organization": "Laravel",
+      "year": "2021",
+      "image": "https://picsum.photos/seed/laravel/400/400",
+      "verify": "https://laravel.com/certification"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "slug": "ecommerce-platform",
+      "category": "React",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+      "technologies": ["React", "Laravel", "MySQL", "Stripe"],
+      "description": "A full-featured e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
+      "features": [
+        "Product catalog with search and filters",
+        "Shopping cart and checkout",
+        "Payment integration with Stripe",
+        "Admin dashboard for inventory management"
+      ],
+      "challenges": "Real-time inventory sync and payment security",
+      "solutions": "Implemented webhooks and JWT authentication",
+      "lessons": "Security and scalability are paramount in e-commerce",
+      "github": "https://github.com/johndoe/ecommerce",
+      "demo": "https://ecommerce.johndoe.com"
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "slug": "task-management-app",
+      "category": "Laravel",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
+      "technologies": ["Laravel", "Vue.js", "MySQL", "Tailwind"],
+      "description": "A collaborative task management tool with real-time updates and team collaboration features.",
+      "features": [
+        "Task boards with drag-and-drop",
+        "Team collaboration and comments",
+        "Real-time notifications",
+        "Progress tracking and reports"
+      ],
+      "challenges": "Real-time sync across multiple users",
+      "solutions": "Used Laravel Echo and WebSockets",
+      "lessons": "Real-time features require careful architecture",
+      "github": "https://github.com/johndoe/taskapp",
+      "demo": "https://task.johndoe.com"
+    },
+    {
+      "id": 3,
+      "title": "Portfolio Website",
+      "slug": "portfolio-website",
+      "category": "React",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      "technologies": ["React", "Vite", "Bootstrap", "JSON"],
+      "description": "A professional portfolio website with dark/light theme and JSON-based content.",
+      "features": [
+        "Fully responsive design",
+        "Dark/Light theme toggle",
+        "JSON-driven content",
+        "SEO optimized"
+      ],
+      "challenges": "Theme switching and performance",
+      "solutions": "Context API with localStorage",
+      "lessons": "Content-driven architecture is key for maintainability",
+      "github": "https://github.com/johndoe/portfolio",
+      "demo": "https://johndoe.com"
+    },
+    {
+      "id": 4,
+      "title": "RESTful API Gateway",
+      "slug": "restful-api-gateway",
+      "category": "API",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
+      "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
+      "description": "A scalable API gateway with authentication, rate limiting, and logging.",
+      "features": [
+        "JWT authentication",
+        "Rate limiting and throttling",
+        "Request logging and monitoring",
+        "API versioning"
+      ],
+      "challenges": "Performance and security",
+      "solutions": "Implemented caching and security best practices",
+      "lessons": "Security is a continuous process",
+      "github": "https://github.com/johndoe/apigateway",
+      "demo": "https://api.johndoe.com"
+    },
+    {
+      "id": 5,
+      "title": "Mobile Food Delivery App",
+      "slug": "mobile-food-delivery",
+      "category": "Mobile",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
+      "technologies": ["React Native", "Firebase", "Stripe"],
+      "description": "A cross-platform food delivery app with real-time order tracking and payment.",
+      "features": [
+        "Restaurant browsing and search",
+        "Order placement and tracking",
+        "Payment integration",
+        "Push notifications"
+      ],
+      "challenges": "Cross-platform consistency",
+      "solutions": "Used React Native with native modules",
+      "lessons": "Native modules are essential for performance",
+      "github": "https://github.com/johndoe/foodapp",
+      "demo": "https://food.johndoe.com"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "company": "TechCorp Inc.",
+      "position": "CTO",
+      "image": "https://picsum.photos/seed/logo/200/200",
+      "rating": 5,
+      "review": "John is an exceptional developer. He delivered our project ahead of schedule with outstanding quality."
+    },
+    {
+      "name": "Michael Chen",
+      "company": "WebSolutions LLC",
+      "position": "CEO",
+      "image": "https://picsum.photos/seed/logo/200/200",
+      "rating": 5,
+      "review": "Working with John was a pleasure. His technical expertise and communication skills are top-notch."
+    },
+    {
+      "name": "Michael Chen",
+      "company": "WebSolutions LLC",
+      "position": "CEO",
+      "image": "https://picsum.photos/seed/logo/200/200",
+      "rating": 5,
+      "review": "Working with John was a pleasure. His technical expertise and communication skills are top-notch."
+    },
+    {
+      "name": "Michael Chen",
+      "company": "WebSolutions LLC",
+      "position": "CEO",
+      "image": "https://picsum.photos/seed/logo/200/200",
+      "rating": 5,
+      "review": "Working with John was a pleasure. His technical expertise and communication skills are top-notch."
+    }
+  ],
+  "pricing": [
+    {
+      "title": "Basic",
+      "price": "$49",
+      "period": "month",
+      "features": [
+        "1 Project",
+        "5 Pages",
+        "Responsive Design",
+        "Basic SEO",
+        "Email Support"
+      ],
+      "featured": false,
+      "buttonText": "Get Started"
+    },
+    {
+      "title": "Pro",
+      "price": "$99",
+      "period": "month",
+      "features": [
+        "5 Projects",
+        "15 Pages",
+        "Responsive Design",
+        "Advanced SEO",
+        "Priority Support",
+        "API Integration"
+      ],
+      "featured": true,
+      "buttonText": "Get Pro"
+    },
+    {
+      "title": "Enterprise",
+      "price": "$249",
+      "period": "month",
+      "features": [
+        "Unlimited Projects",
+        "Unlimited Pages",
+        "Responsive Design",
+        "Full SEO Suite",
+        "24/7 Support",
+        "Custom Solutions"
+      ],
+      "featured": false,
+      "buttonText": "Contact Us"
+    }
+  ],
+  "resume": {
+    "file": "/resume.pdf",
+    "summary": "Full Stack Developer with 5+ years of experience building modern web applications. Expert in React, Laravel, and API development."
+  },
+  "contact": {
+    "email": "john@example.com",
+    "phone": "+1 234 567 890",
+    "whatsapp": "+1 234 567 890",
+    "address": "San Francisco, CA, USA",
+    "map": "https://maps.google.com/maps?q=San+Francisco"
+  },
+  "socialLinks": {
+    "github": "https://github.com/johndoe",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "instagram": "https://instagram.com/johndoe",
+    "facebook": "https://facebook.com/johndoe",
+    "youtube": "https://youtube.com/johndoe"
+  },
+  "footer": {
+    "description": "Full Stack Developer building modern, scalable web applications with React and Laravel.",
+    "quickLinks": [
+      { "name": "Home", "hash": "#home" },
+      { "name": "About", "hash": "#about" },
+      { "name": "Skills", "hash": "#skills" },
+      { "name": "Projects", "hash": "#projects" },
+      { "name": "Contact", "hash": "#contact" }
+    ],
+    "services": [
+      { "name": "Web Development", "hash": "#services" },
+      { "name": "React Development", "hash": "#services" },
+      { "name": "Laravel Development", "hash": "#services" },
+      { "name": "API Development", "hash": "#services" }
+    ],
+    "copyright": "© 2026 John Doe. All rights reserved."
+  },
+  "seo": {
+    "title": "John Doe | Full Stack Developer Portfolio",
+    "description": "Professional portfolio of John Doe, a Full Stack Developer specializing in React, Laravel, and API Development.",
+    "keywords": "Full Stack Developer, React, Laravel, Portfolio, Web Development",
+    "author": "John Doe",
+    "ogImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop"
+  },
+  "settings": {
+    "theme": "light",
+    "animation": true,
+    "loader": true,
+    "darkMode": true,
+    "version": "1.0.0"
+  }
+}
