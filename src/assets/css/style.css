@@ -1846,3 +1846,93 @@ textarea.form-control {
 .stagger-children>*:nth-child(8) {
     animation-delay: 0.40s;
 }
+
+.invalid-feedback {
+    color: red;
+}
+
+/* ----- Phone Group (Country + Number) ----- */
+.phone-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone-group .country-select {
+    flex: 0 0 160px;
+    min-width: 130px;
+}
+
+.phone-group .phone-input {
+    flex: 1;
+}
+
+/* React-Select dark theme compatibility */
+.react-select__control {
+    background: var(--color-input-bg) !important;
+    border-color: var(--color-border) !important;
+    min-height: 44px !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+.react-select__control:hover {
+    border-color: var(--color-text-primary) !important;
+}
+
+.react-select__control--is-focused {
+    border-color: var(--color-text-primary) !important;
+    box-shadow: 0 0 0 2px var(--color-primary-light) !important;
+}
+
+.react-select__value-container {
+    padding: 0 12px !important;
+}
+
+.react-select__indicator {
+    color: var(--color-text-muted) !important;
+}
+
+.react-select__menu {
+    background: var(--color-card-bg) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+.react-select__option {
+    color: var(--color-text-body) !important;
+    background: transparent !important;
+}
+
+.react-select__option--is-focused {
+    background: var(--color-primary-light) !important;
+}
+
+.react-select__option--is-selected {
+    background: var(--color-text-primary) !important;
+    color: #fff !important;
+}
+
+.react-select__single-value {
+    color: var(--color-text-body) !important;
+}
+
+.react-select__placeholder {
+    color: var(--color-text-muted) !important;
+}
+
+/* Responsive */
+@media (max-width: 575px) {
+    .phone-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .phone-group .country-select {
+        flex: 1;
+        width: 100%;
+    }
+
+    .phone-group .phone-input {
+        width: 100%;
+    }
+}

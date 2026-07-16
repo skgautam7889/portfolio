@@ -20,10 +20,19 @@ import data from './data/portfolio.json';
 import { Helmet } from 'react-helmet-async';
 import PWAInstallPrompt from './components/pwa/PWAInstallPrompt';
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   const { website, seo } = data;
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        theme="colored"
+        newestOnTop
+        pauseOnFocusLoss={false}
+      />
       <Helmet>
         <title>{seo?.title || website?.title || 'Portfolio'}</title>
         <meta name="description" content={seo?.description || website?.description || ''} />
