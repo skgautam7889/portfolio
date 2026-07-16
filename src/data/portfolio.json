@@ -10,14 +10,42 @@
     "theme": "light",
     "version": "1.0.0"
   },
+  "seo": {
+    "title": "John Doe | Full Stack Developer Portfolio",
+    "description": "Professional portfolio of John Doe, a Full Stack Developer specializing in React, Laravel, and API Development.",
+    "keywords": "Full Stack Developer, React, Laravel, Portfolio, Web Development",
+    "author": "John Doe",
+    "ogImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop"
+  },
   "navigation": [
-    { "name": "Home", "hash": "#home" },
-    { "name": "About", "hash": "#about" },
-    { "name": "Skills", "hash": "#skills" },
-    { "name": "Services", "hash": "#services" },
-    { "name": "Experience", "hash": "#experience" },
-    { "name": "Projects", "hash": "#projects" },
-    { "name": "Contact", "hash": "#contact" }
+    {
+      "name": "Home",
+      "hash": "#home"
+    },
+    {
+      "name": "About",
+      "hash": "#about"
+    },
+    {
+      "name": "Skills",
+      "hash": "#skills"
+    },
+    {
+      "name": "Services",
+      "hash": "#services"
+    },
+    {
+      "name": "Experience",
+      "hash": "#experience"
+    },
+    {
+      "name": "Projects",
+      "hash": "#projects"
+    },
+    {
+      "name": "Contact",
+      "hash": "#contact"
+    }
   ],
   "hero": {
     "name": "John Doe",
@@ -52,52 +80,140 @@
       "clients": "30+",
       "location": "USA"
     },
-    "languages": ["English", "Spanish", "French"],
+    "languages": [
+      "English",
+      "Spanish",
+      "French"
+    ],
     "resume": "/resume.pdf"
   },
   "statistics": [
-    { "icon": "FaBriefcase", "value": "5+", "label": "Years Experience" },
-    { "icon": "FaProjectDiagram", "value": "50+", "label": "Projects Completed" },
-    { "icon": "FaUsers", "value": "30+", "label": "Happy Clients" },
-    { "icon": "FaCode", "value": "20+", "label": "Technologies" }
+    {
+      "icon": "FaBriefcase",
+      "value": "5+",
+      "label": "Years Experience"
+    },
+    {
+      "icon": "FaProjectDiagram",
+      "value": "50+",
+      "label": "Projects Completed"
+    },
+    {
+      "icon": "FaUsers",
+      "value": "30+",
+      "label": "Happy Clients"
+    },
+    {
+      "icon": "FaCode",
+      "value": "20+",
+      "label": "Technologies"
+    }
   ],
   "skills": {
     "categories": [
       {
         "name": "Frontend",
         "skills": [
-          { "name": "React.js", "percentage": 95, "icon": "FaReact" },
-          { "name": "Next.js", "percentage": 85, "icon": "SiNextdotjs" },
-          { "name": "JavaScript", "percentage": 90, "icon": "FaJs" },
-          { "name": "TypeScript", "percentage": 80, "icon": "SiTypescript" },
-          { "name": "HTML5", "percentage": 95, "icon": "SiHtml5" },
-          { "name": "CSS3", "percentage": 90, "icon": "SiCss3" }
+          {
+            "name": "React.js",
+            "percentage": 95,
+            "icon": "FaReact"
+          },
+          {
+            "name": "Next.js",
+            "percentage": 85,
+            "icon": "SiNextdotjs"
+          },
+          {
+            "name": "JavaScript",
+            "percentage": 90,
+            "icon": "FaJs"
+          },
+          {
+            "name": "TypeScript",
+            "percentage": 80,
+            "icon": "SiTypescript"
+          },
+          {
+            "name": "HTML5",
+            "percentage": 95,
+            "icon": "SiHtml5"
+          },
+          {
+            "name": "CSS3",
+            "percentage": 90,
+            "icon": "SiCss3"
+          }
         ]
       },
       {
         "name": "Backend",
         "skills": [
-          { "name": "Laravel", "percentage": 90, "icon": "SiLaravel" },
-          { "name": "Node.js", "percentage": 80, "icon": "FaNode" },
-          { "name": "PHP", "percentage": 85, "icon": "FaPhp" },
-          { "name": "Python", "percentage": 70, "icon": "FaPython" }
+          {
+            "name": "Laravel",
+            "percentage": 90,
+            "icon": "SiLaravel"
+          },
+          {
+            "name": "Node.js",
+            "percentage": 80,
+            "icon": "FaNode"
+          },
+          {
+            "name": "PHP",
+            "percentage": 85,
+            "icon": "FaPhp"
+          },
+          {
+            "name": "Python",
+            "percentage": 70,
+            "icon": "FaPython"
+          }
         ]
       },
       {
         "name": "Database",
         "skills": [
-          { "name": "MySQL", "percentage": 85, "icon": "SiMysql" },
-          { "name": "PostgreSQL", "percentage": 75, "icon": "SiPostgresql" },
-          { "name": "MongoDB", "percentage": 70, "icon": "SiMongodb" }
+          {
+            "name": "MySQL",
+            "percentage": 85,
+            "icon": "SiMysql"
+          },
+          {
+            "name": "PostgreSQL",
+            "percentage": 75,
+            "icon": "SiPostgresql"
+          },
+          {
+            "name": "MongoDB",
+            "percentage": 70,
+            "icon": "SiMongodb"
+          }
         ]
       },
       {
         "name": "Tools",
         "skills": [
-          { "name": "Git", "percentage": 90, "icon": "FaGit" },
-          { "name": "Docker", "percentage": 70, "icon": "SiDocker" },
-          { "name": "AWS", "percentage": 65, "icon": "SiAmazonaws" },
-          { "name": "VS Code", "percentage": 95, "icon": "SiVisualstudiocode" }
+          {
+            "name": "Git",
+            "percentage": 90,
+            "icon": "FaGit"
+          },
+          {
+            "name": "Docker",
+            "percentage": 70,
+            "icon": "SiDocker"
+          },
+          {
+            "name": "AWS",
+            "percentage": 65,
+            "icon": "SiAmazonaws"
+          },
+          {
+            "name": "VS Code",
+            "percentage": 95,
+            "icon": "SiVisualstudiocode"
+          }
         ]
       }
     ]
@@ -141,7 +257,12 @@
       "duration": "2022 - Present",
       "location": "San Francisco, CA",
       "description": "Leading a team of 8 developers building enterprise-scale applications. Implemented microservices architecture and improved performance by 40%.",
-      "technologies": ["React", "Laravel", "AWS", "Docker"],
+      "technologies": [
+        "React",
+        "Laravel",
+        "AWS",
+        "Docker"
+      ],
       "logo": "https://picsum.photos/seed/techcorp/200/200"
     },
     {
@@ -150,7 +271,12 @@
       "duration": "2020 - 2022",
       "location": "Austin, TX",
       "description": "Developed and maintained multiple client projects. Built RESTful APIs and responsive frontend interfaces.",
-      "technologies": ["React", "Node.js", "MySQL", "Git"],
+      "technologies": [
+        "React",
+        "Node.js",
+        "MySQL",
+        "Git"
+      ],
       "logo": "https://picsum.photos/seed/websolutions/200/200"
     },
     {
@@ -159,7 +285,12 @@
       "duration": "2019 - 2020",
       "location": "Remote",
       "description": "Assisted in building MVP for various startups. Worked with React and Laravel stacks.",
-      "technologies": ["React", "Laravel", "PHP", "Bootstrap"],
+      "technologies": [
+        "React",
+        "Laravel",
+        "PHP",
+        "Bootstrap"
+      ],
       "logo": "https://picsum.photos/seed/startuphub/200/200"
     }
   ],
@@ -212,7 +343,12 @@
       "category": "React",
       "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
       "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
-      "technologies": ["React", "Laravel", "MySQL", "Stripe"],
+      "technologies": [
+        "React",
+        "Laravel",
+        "MySQL",
+        "Stripe"
+      ],
       "description": "A full-featured e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
       "features": [
         "Product catalog with search and filters",
@@ -233,7 +369,12 @@
       "category": "Laravel",
       "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
       "thumbnail": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
-      "technologies": ["Laravel", "Vue.js", "MySQL", "Tailwind"],
+      "technologies": [
+        "Laravel",
+        "Vue.js",
+        "MySQL",
+        "Tailwind"
+      ],
       "description": "A collaborative task management tool with real-time updates and team collaboration features.",
       "features": [
         "Task boards with drag-and-drop",
@@ -254,7 +395,12 @@
       "category": "React",
       "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-      "technologies": ["React", "Vite", "Bootstrap", "JSON"],
+      "technologies": [
+        "React",
+        "Vite",
+        "Bootstrap",
+        "JSON"
+      ],
       "description": "A professional portfolio website with dark/light theme and JSON-based content.",
       "features": [
         "Fully responsive design",
@@ -275,7 +421,12 @@
       "category": "API",
       "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
       "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
-      "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
+      "technologies": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT"
+      ],
       "description": "A scalable API gateway with authentication, rate limiting, and logging.",
       "features": [
         "JWT authentication",
@@ -296,7 +447,11 @@
       "category": "Mobile",
       "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=600&fit=crop",
       "thumbnail": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
-      "technologies": ["React Native", "Firebase", "Stripe"],
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "Stripe"
+      ],
       "description": "A cross-platform food delivery app with real-time order tracking and payment.",
       "features": [
         "Restaurant browsing and search",
@@ -413,26 +568,46 @@
   "footer": {
     "description": "Full Stack Developer building modern, scalable web applications with React and Laravel.",
     "quickLinks": [
-      { "name": "Home", "hash": "#home" },
-      { "name": "About", "hash": "#about" },
-      { "name": "Skills", "hash": "#skills" },
-      { "name": "Projects", "hash": "#projects" },
-      { "name": "Contact", "hash": "#contact" }
+      {
+        "name": "Home",
+        "hash": "#home"
+      },
+      {
+        "name": "About",
+        "hash": "#about"
+      },
+      {
+        "name": "Skills",
+        "hash": "#skills"
+      },
+      {
+        "name": "Projects",
+        "hash": "#projects"
+      },
+      {
+        "name": "Contact",
+        "hash": "#contact"
+      }
     ],
     "services": [
-      { "name": "Web Development", "hash": "#services" },
-      { "name": "React Development", "hash": "#services" },
-      { "name": "Laravel Development", "hash": "#services" },
-      { "name": "API Development", "hash": "#services" }
+      {
+        "name": "Web Development",
+        "hash": "#services"
+      },
+      {
+        "name": "React Development",
+        "hash": "#services"
+      },
+      {
+        "name": "Laravel Development",
+        "hash": "#services"
+      },
+      {
+        "name": "API Development",
+        "hash": "#services"
+      }
     ],
     "copyright": "© 2026 John Doe. All rights reserved."
-  },
-  "seo": {
-    "title": "John Doe | Full Stack Developer Portfolio",
-    "description": "Professional portfolio of John Doe, a Full Stack Developer specializing in React, Laravel, and API Development.",
-    "keywords": "Full Stack Developer, React, Laravel, Portfolio, Web Development",
-    "author": "John Doe",
-    "ogImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop"
   },
   "settings": {
     "theme": "light",
