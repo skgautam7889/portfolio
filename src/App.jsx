@@ -18,6 +18,7 @@ import ThemeProvider from './context/ThemeProvider';
 import CodeRainLoader from './components/CodeRainLoader';
 import data from './data/portfolio.json';
 import { Helmet } from 'react-helmet-async';
+import PWAInstallPrompt from './components/pwa/PWAInstallPrompt';
 
 function App() {
   const { website, seo } = data;
@@ -62,6 +63,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          <PWAInstallPrompt />
         </Router>
       </ThemeProvider>
     </>
