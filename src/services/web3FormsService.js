@@ -58,7 +58,6 @@ export const sendContactEmail = async (formData) => {
         });
 
         const result = await response.json();
-        console.log("result==>", result);
         if (!response.ok || !result.success) {
             return {
                 success: false,

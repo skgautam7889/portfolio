@@ -19,11 +19,11 @@ const Certificate = () => {
                                 <h5 className="card-title">{cert.title}</h5>
                                 <p style={{ color: 'var(--color-text-primary)', fontWeight: 500 }}>{cert.organization}</p>
                                 <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>{cert.year}</p>
-                                {cert.verify && (
+                                {/* {cert.verify && (
                                     <a href={cert.verify} target="_blank" rel="noopener noreferrer" className="cert-verify">
                                         Verify
                                     </a>
-                                )}
+                                )} */}
                             </div>
                         </div>
                     ))}

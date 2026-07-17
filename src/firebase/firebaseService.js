@@ -14,8 +14,6 @@ import db from "./firestore";
 class FirebaseService {
 
     async create(collectionName, data) {
-        console.log("collectionName==>", collectionName)
-        console.log("data==>", data)
         try {
 
             const document = await addDoc(

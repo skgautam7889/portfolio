@@ -1,20 +1,20 @@
 {
   "website": {
-    "name": "John Doe",
+    "name": "Suraj Kumar",
     "logo": "https://picsum.photos/seed/logo/200/200",
     "favicon": "https://picsum.photos/seed/favicon/64/64",
-    "title": "John Doe | Full Stack Developer",
-    "description": "Professional Full Stack Developer specializing in React, Laravel, and API Development.",
-    "keywords": "React, Laravel, Full Stack, Developer, Portfolio, Web Development, API",
-    "author": "John Doe",
+    "title": "Suraj Kumar | Full Stack Developer",
+    "description": "Experienced Full Stack Developer specializing in Laravel, PHP, React.js, Node.js, MySQL, PostgreSQL, and REST API development. Passionate about building scalable web applications and modern digital solutions.",
+    "keywords": "Suraj Kumar, Full Stack Developer, Laravel Developer, PHP Developer, React.js, Node.js, MERN Stack, MySQL, PostgreSQL, REST API, Web Development, Software Engineer",
+    "author": "Suraj Kumar",
     "theme": "light",
     "version": "1.0.0"
   },
   "seo": {
-    "title": "John Doe | Full Stack Developer Portfolio",
-    "description": "Professional portfolio of John Doe, a Full Stack Developer specializing in React, Laravel, and API Development.",
-    "keywords": "Full Stack Developer, React, Laravel, Portfolio, Web Development",
-    "author": "John Doe",
+    "title": "Suraj Kumar | Full Stack Developer Portfolio",
+    "description": "Explore the professional portfolio of Suraj Kumar, a Full Stack Developer with expertise in Laravel, PHP, React.js, Node.js, MySQL, PostgreSQL, REST APIs, and scalable web application development.",
+    "keywords": "Suraj Kumar, Full Stack Developer, Laravel, PHP, React.js, Node.js, MERN Stack, Portfolio, Software Developer, REST API, Web Development",
+    "author": "Suraj Kumar",
     "ogImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop"
   },
   "navigation": [
@@ -48,44 +48,44 @@
     }
   ],
   "hero": {
-    "name": "John Doe",
+    "name": "Suraj Kumar",
     "designation": "Full Stack Developer",
-    "subtitle": "I build modern, scalable web applications with React & Laravel.",
-    "description": "Passionate developer with 5+ years of experience crafting digital experiences. Specializing in React, Laravel, and API development.",
+    "subtitle": "Building scalable, high-performance web applications with Laravel, React.js, Node.js, and modern web technologies.",
+    "description": "Experienced Full Stack Developer with 5+ years of expertise in designing and developing secure, scalable, and user-centric web applications. Skilled in PHP, Laravel, React.js, Node.js, MySQL, PostgreSQL, REST APIs, and modern JavaScript frameworks. Passionate about solving complex problems and delivering high-quality digital solutions.",
     "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&crop=face",
     "buttons": {
       "hire": "#contact",
-      "resume": "#resume",
+      "resume": "/resume/Suraj_Kumar_Resume.pdf",
       "projects": "#projects"
     },
     "social": {
-      "github": "https://github.com/johndoe",
-      "linkedin": "https://linkedin.com/in/johndoe",
-      "twitter": "https://twitter.com/johndoe",
-      "instagram": "https://instagram.com/johndoe"
+      "github": "https://github.com/skgautam7889",
+      "linkedin": "https://www.linkedin.com/in/suraj-kumar-865491185",
+      "twitter": "https://twitter.com/skgautam7889",
+      "instagram": "https://instagram.com/skgautam7889",
+      "facebook": "https://facebook.com/skgautam7889"
     }
   },
   "about": {
     "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop&crop=face",
     "title": "About Me",
-    "description": "I'm a Full Stack Developer with a passion for creating beautiful, functional, and user-friendly web applications. I have 5+ years of experience working with modern technologies.",
-    "objective": "To leverage my skills in React and Laravel to build innovative solutions that solve real-world problems and deliver exceptional user experiences.",
+    "description": "I'm a passionate Full Stack Developer with over 5 years of professional experience in designing, developing, and deploying scalable web applications. My expertise spans Laravel, PHP, React.js, Node.js, MySQL, PostgreSQL, RESTful APIs, and modern JavaScript technologies. I enjoy solving complex business challenges by building secure, efficient, and user-focused digital solutions.",
+    "objective": "To contribute to innovative organizations by developing high-quality, scalable, and performance-driven web applications while continuously learning emerging technologies and delivering exceptional user experiences.",
     "personal": {
-      "name": "John Doe",
-      "email": "john@example.com",
-      "phone": "+1 234 567 890",
-      "address": "San Francisco, CA",
+      "name": "Suraj Kumar",
+      "email": "skgautan7889@gmail.com",
+      "phone": "+91 8707673327",
+      "address": "Lucknow, Uttar Pradesh, India",
       "experience": "5+ Years",
-      "projects": "50+",
-      "clients": "30+",
-      "location": "USA"
+      "projects": "25+",
+      "clients": "10+",
+      "location": "Lucknow, India"
     },
     "languages": [
       "English",
-      "Spanish",
-      "French"
+      "Hindi"
     ],
-    "resume": "/resume.pdf"
+    "resume": "/resume/Suraj_Kumar_Resume.pdf"
   },
   "statistics": [
     {
@@ -121,12 +121,12 @@
           },
           {
             "name": "Next.js",
-            "percentage": 85,
+            "percentage": 90,
             "icon": "SiNextdotjs"
           },
           {
             "name": "JavaScript",
-            "percentage": 90,
+            "percentage": 95,
             "icon": "FaJs"
           },
           {
@@ -136,13 +136,48 @@
           },
           {
             "name": "HTML5",
-            "percentage": 95,
+            "percentage": 98,
             "icon": "SiHtml5"
           },
           {
             "name": "CSS3",
-            "percentage": 90,
+            "percentage": 95,
             "icon": "SiCss3"
+          },
+          {
+            "name": "Bootstrap",
+            "percentage": 95,
+            "icon": "FaBootstrap"
+          },
+          {
+            "name": "Tailwind CSS",
+            "percentage": 90,
+            "icon": "SiTailwindcss"
+          },
+          {
+            "name": "Redux Toolkit",
+            "percentage": 85,
+            "icon": "SiRedux"
+          },
+          {
+            "name": "jQuery",
+            "percentage": 90,
+            "icon": "SiJquery"
+          },
+          {
+            "name": "Axios",
+            "percentage": 95,
+            "icon": "SiAxios"
+          },
+          {
+            "name": "React Hook Form",
+            "percentage": 85,
+            "icon": "SiReacthookform"
+          },
+          {
+            "name": "Vite",
+            "percentage": 90,
+            "icon": "SiVite"
           }
         ]
       },
@@ -151,23 +186,68 @@
         "skills": [
           {
             "name": "Laravel",
-            "percentage": 90,
+            "percentage": 98,
             "icon": "SiLaravel"
           },
           {
+            "name": "PHP",
+            "percentage": 98,
+            "icon": "FaPhp"
+          },
+          {
             "name": "Node.js",
-            "percentage": 80,
+            "percentage": 85,
             "icon": "FaNode"
           },
           {
-            "name": "PHP",
+            "name": "Express.js",
             "percentage": 85,
-            "icon": "FaPhp"
+            "icon": "SiExpress"
+          },
+          {
+            "name": "REST API",
+            "percentage": 95,
+            "icon": "FaServer"
+          },
+          {
+            "name": "JWT Authentication",
+            "percentage": 90,
+            "icon": "FaKey"
+          },
+          {
+            "name": "OAuth",
+            "percentage": 85,
+            "icon": "FaUserShield"
           },
           {
             "name": "Python",
             "percentage": 70,
             "icon": "FaPython"
+          },
+          {
+            "name": "WebSockets",
+            "percentage": 80,
+            "icon": "FaNetworkWired"
+          },
+          {
+            "name": "Cron Jobs",
+            "percentage": 90,
+            "icon": "FaClock"
+          }
+        ]
+      },
+      {
+        "name": "Mobile",
+        "skills": [
+          {
+            "name": "React Native",
+            "percentage": 80,
+            "icon": "FaMobileAlt"
+          },
+          {
+            "name": "Android",
+            "percentage": 75,
+            "icon": "FaAndroid"
           }
         ]
       },
@@ -176,18 +256,108 @@
         "skills": [
           {
             "name": "MySQL",
-            "percentage": 85,
+            "percentage": 95,
             "icon": "SiMysql"
           },
           {
             "name": "PostgreSQL",
-            "percentage": 75,
+            "percentage": 90,
             "icon": "SiPostgresql"
           },
           {
             "name": "MongoDB",
-            "percentage": 70,
+            "percentage": 85,
             "icon": "SiMongodb"
+          },
+          {
+            "name": "Redis",
+            "percentage": 80,
+            "icon": "SiRedis"
+          },
+          {
+            "name": "phpMyAdmin",
+            "percentage": 95,
+            "icon": "SiPhpmyadmin"
+          }
+        ]
+      },
+      {
+        "name": "Hosting & DevOps",
+        "skills": [
+          {
+            "name": "Git",
+            "percentage": 95,
+            "icon": "FaGitAlt"
+          },
+          {
+            "name": "GitHub",
+            "percentage": 95,
+            "icon": "FaGithub"
+          },
+          {
+            "name": "Docker",
+            "percentage": 75,
+            "icon": "SiDocker"
+          },
+          {
+            "name": "AWS",
+            "percentage": 70,
+            "icon": "SiAmazonaws"
+          },
+          {
+            "name": "Linux",
+            "percentage": 90,
+            "icon": "FaLinux"
+          },
+          {
+            "name": "Ubuntu Server",
+            "percentage": 90,
+            "icon": "FaUbuntu"
+          },
+          {
+            "name": "VPS Server",
+            "percentage": 90,
+            "icon": "FaServer"
+          },
+          {
+            "name": "cPanel",
+            "percentage": 95,
+            "icon": "FaServer"
+          },
+          {
+            "name": "HestiaCP",
+            "percentage": 85,
+            "icon": "FaServer"
+          },
+          {
+            "name": "Apache",
+            "percentage": 90,
+            "icon": "SiApache"
+          },
+          {
+            "name": "Nginx",
+            "percentage": 85,
+            "icon": "SiNginx"
+          },
+          {
+            "name": "SSL",
+            "percentage": 90,
+            "icon": "FaLock"
+          },
+          {
+            "name": "SSH",
+            "percentage": 90,
+            "icon": "FaTerminal"
+          },
+          {
+            "name": "DNS Management",
+            "percentage": 85,
+            "icon": "FaGlobe"
+          },
+          {
+            "name": "Cloudflare",
+            "percentage": 80,
+            "icon": "SiCloudflare"
           }
         ]
       },
@@ -195,24 +365,39 @@
         "name": "Tools",
         "skills": [
           {
-            "name": "Git",
-            "percentage": 90,
-            "icon": "FaGit"
-          },
-          {
-            "name": "Docker",
-            "percentage": 70,
-            "icon": "SiDocker"
-          },
-          {
-            "name": "AWS",
-            "percentage": 65,
-            "icon": "SiAmazonaws"
-          },
-          {
             "name": "VS Code",
-            "percentage": 95,
+            "percentage": 100,
             "icon": "SiVisualstudiocode"
+          },
+          {
+            "name": "Postman",
+            "percentage": 95,
+            "icon": "SiPostman"
+          },
+          {
+            "name": "Composer",
+            "percentage": 95,
+            "icon": "SiComposer"
+          },
+          {
+            "name": "npm",
+            "percentage": 95,
+            "icon": "FaNpm"
+          },
+          {
+            "name": "Yarn",
+            "percentage": 85,
+            "icon": "FaYarn"
+          },
+          {
+            "name": "Figma",
+            "percentage": 75,
+            "icon": "FaFigma"
+          },
+          {
+            "name": "Jira",
+            "percentage": 80,
+            "icon": "FaJira"
           }
         ]
       }
@@ -220,119 +405,217 @@
   },
   "services": [
     {
-      "title": "Web Development",
-      "description": "Full-stack web development using modern frameworks like React and Laravel.",
+      "title": "Custom Web Development",
+      "description": "Building secure, scalable, and high-performance web applications tailored to business requirements using modern technologies.",
       "icon": "FaGlobe"
     },
     {
-      "title": "React Development",
-      "description": "Building interactive, high-performance single-page applications with React.",
+      "title": "Frontend Development",
+      "description": "Developing responsive, SEO-friendly, and interactive user interfaces with React.js, Next.js, TypeScript, Bootstrap, and Tailwind CSS.",
       "icon": "FaReact"
     },
     {
-      "title": "Laravel Development",
-      "description": "Scalable backend solutions using Laravel framework with RESTful APIs.",
+      "title": "Backend Development",
+      "description": "Creating robust backend systems, REST APIs, authentication, and business logic using Laravel, PHP, Node.js, and Express.js.",
       "icon": "SiLaravel"
     },
     {
-      "title": "API Development",
-      "description": "Designing and building robust RESTful and GraphQL APIs.",
-      "icon": "FaApi"
+      "title": "REST API Development & Integration",
+      "description": "Developing and integrating REST APIs, third-party services, payment gateways, social login, and external business platforms.",
+      "icon": "FaServer"
     },
     {
-      "title": "Mobile Development",
-      "description": "Cross-platform mobile apps using React Native.",
+      "title": "Mobile App Development",
+      "description": "Developing high-performance cross-platform Android and iOS applications using React Native with seamless backend integration.",
       "icon": "FaMobileAlt"
     },
     {
-      "title": "UI/UX Design",
-      "description": "Creating beautiful, intuitive user interfaces with focus on user experience.",
-      "icon": "FaPaintBrush"
+      "title": "AI Integration & Automation",
+      "description": "Integrating AI-powered solutions including OpenAI, ChatGPT, Gemini, AI chatbots, workflow automation, and intelligent business applications.",
+      "icon": "FaRobot"
+    },
+    {
+      "title": "DevOps & CI/CD",
+      "description": "Implementing CI/CD pipelines, Docker containerization, Git workflows, automated deployments, monitoring, and production infrastructure.",
+      "icon": "FaCodeBranch"
+    },
+    {
+      "title": "VPS & Cloud Server Management",
+      "description": "Setting up and managing Linux VPS servers, Ubuntu, Apache, Nginx, SSL, SSH, Firewall, backups, and server optimization.",
+      "icon": "FaServer"
+    },
+    {
+      "title": "Web Hosting & Deployment",
+      "description": "Deploying and managing applications using cPanel, HestiaCP, Plesk, Cloudflare, DNS, domains, email services, and production hosting.",
+      "icon": "FaCloud"
+    },
+    {
+      "title": "Database Architecture",
+      "description": "Designing, optimizing, and maintaining scalable MySQL, PostgreSQL, MongoDB, and Redis databases for enterprise applications.",
+      "icon": "SiMysql"
+    },
+    {
+      "title": "Performance & Security Optimization",
+      "description": "Improving application speed, Core Web Vitals, SEO, caching, server security, vulnerability fixes, and overall system performance.",
+      "icon": "FaShieldAlt"
+    },
+    {
+      "title": "Maintenance & Technical Support",
+      "description": "Providing ongoing maintenance, monitoring, bug fixing, upgrades, feature enhancements, and long-term technical support.",
+      "icon": "FaTools"
     }
   ],
   "experience": [
     {
-      "company": "TechCorp Inc.",
+      "company": "Jamtech Technologies Pvt. Ltd.",
       "position": "Senior Full Stack Developer",
-      "duration": "2022 - Present",
-      "location": "San Francisco, CA",
-      "description": "Leading a team of 8 developers building enterprise-scale applications. Implemented microservices architecture and improved performance by 40%.",
-      "technologies": [
-        "React",
-        "Laravel",
-        "AWS",
-        "Docker"
+      "duration": "Feb 2021 - Present",
+      "location": "Lucknow, Uttar Pradesh, India",
+      "description": "Working as a Full Stack Developer, delivering enterprise-grade web applications, RESTful APIs, AI-powered solutions, and scalable software systems. Responsible for the complete software development lifecycle, from requirement analysis and architecture design to deployment and production support.",
+      "responsibilities": [
+        "Developed enterprise web applications using Laravel, React.js, Next.js, Node.js, and PHP.",
+        "Designed and implemented scalable REST APIs and third-party integrations.",
+        "Built AI-powered applications using OpenAI, Gemini, and automation workflows.",
+        "Developed cross-platform mobile applications using React Native.",
+        "Managed Linux VPS servers, cPanel, HestiaCP, Apache, Nginx, SSL, DNS, and Cloudflare.",
+        "Implemented Docker-based deployments and CI/CD workflows.",
+        "Optimized MySQL, PostgreSQL, and MongoDB databases for high performance.",
+        "Collaborated with cross-functional teams to deliver scalable software solutions.",
+        "Maintained production applications and resolved critical issues with minimal downtime."
       ],
-      "logo": "https://picsum.photos/seed/techcorp/200/200"
-    },
-    {
-      "company": "WebSolutions LLC",
-      "position": "Full Stack Developer",
-      "duration": "2020 - 2022",
-      "location": "Austin, TX",
-      "description": "Developed and maintained multiple client projects. Built RESTful APIs and responsive frontend interfaces.",
       "technologies": [
-        "React",
-        "Node.js",
-        "MySQL",
-        "Git"
-      ],
-      "logo": "https://picsum.photos/seed/websolutions/200/200"
-    },
-    {
-      "company": "StartupHub",
-      "position": "Junior Developer",
-      "duration": "2019 - 2020",
-      "location": "Remote",
-      "description": "Assisted in building MVP for various startups. Worked with React and Laravel stacks.",
-      "technologies": [
-        "React",
         "Laravel",
         "PHP",
-        "Bootstrap"
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "React Native",
+        "JavaScript",
+        "TypeScript",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "REST API",
+        "OpenAI API",
+        "Gemini API",
+        "Docker",
+        "Git",
+        "GitHub",
+        "Linux",
+        "Ubuntu",
+        "VPS",
+        "cPanel",
+        "HestiaCP",
+        "Apache",
+        "Nginx",
+        "Cloudflare",
+        "Postman"
       ],
-      "logo": "https://picsum.photos/seed/startuphub/200/200"
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjV47Y0R8JU-niC_5PHWOWHPV6JMl0v78EGMB4CGFAUjRQ5fyJ70WOOR_3&s=10"
+    },
+    {
+      "company": "Kraftors Web Solutions Pvt. Ltd.",
+      "position": "Full Stack Developer",
+      "duration": "Jan 2020 - Jan 2021",
+      "location": "Lucknow, Uttar Pradesh, India",
+      "description": "Started my professional software development career by building business websites, web applications, and backend systems for clients. Worked closely with senior developers while gaining hands-on experience in full-stack web development, database design, and deployment.",
+      "responsibilities": [
+        "Developed responsive websites and business applications using PHP and Laravel.",
+        "Created frontend interfaces using HTML5, CSS3, Bootstrap, JavaScript, and jQuery.",
+        "Designed and integrated RESTful APIs.",
+        "Worked with MySQL database design and optimization.",
+        "Maintained existing applications and fixed production issues.",
+        "Participated in application deployment and hosting management.",
+        "Used Git for version control and team collaboration.",
+        "Worked directly with clients to understand project requirements."
+      ],
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "jQuery",
+        "MySQL",
+        "REST API",
+        "Git",
+        "Apache",
+        "cPanel"
+      ],
+      "logo": "https://thekraftors.com/kraftors_logo_white_bg.png"
     }
   ],
   "education": [
     {
-      "degree": "M.Sc. in Computer Science",
-      "college": "Stanford University",
-      "university": "Stanford",
-      "year": "2017 - 2019",
-      "description": "Specialized in Software Engineering and Distributed Systems.",
-      "logo": "https://picsum.photos/seed/stanford/200/200"
+      "degree": "Diploma in Computer Science & Engineering",
+      "college": "Government Polytechnic Unnao",
+      "university": "Board of Technical Education, Uttar Pradesh",
+      "year": "2017 - 2020",
+      "description": "Built a strong foundation in Computer Science, Software Engineering, Database Management Systems, Data Structures, Operating Systems, Computer Networks, and Web Development. Completed multiple academic and practical projects focused on modern software development.",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3iX9C6Byus6jNu-5MyG1geiukdPRVYPTnYJwo0qU4whsYQg-1DG9zXo&s=10"
     },
     {
-      "degree": "B.Sc. in Computer Science",
-      "college": "MIT",
-      "university": "Massachusetts Institute of Technology",
-      "year": "2013 - 2017",
-      "description": "Computer Science with focus on Web Technologies and Algorithms.",
-      "logo": "https://picsum.photos/seed/mit/200/200"
+      "degree": "Higher Secondary (12th)",
+      "college": "Your School Name",
+      "university": "Uttar Pradesh Board",
+      "year": "2016 - 2017",
+      "description": "Completed Higher Secondary education with a focus on Science and Mathematics, building a strong analytical and technical foundation.",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3iX9C6Byus6jNu-5MyG1geiukdPRVYPTnYJwo0qU4whsYQg-1DG9zXo&s=10"
+    },
+    {
+      "degree": "Secondary School (10th)",
+      "college": "Your School Name",
+      "university": "Uttar Pradesh Board",
+      "year": "2014 - 2015",
+      "description": "Completed secondary education with excellent academic performance and developed a strong interest in technology and programming.",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3iX9C6Byus6jNu-5MyG1geiukdPRVYPTnYJwo0qU4whsYQg-1DG9zXo&s=10"
     }
   ],
   "certificates": [
     {
-      "title": "AWS Certified Developer",
-      "organization": "Amazon Web Services",
-      "year": "2023",
-      "image": "https://picsum.photos/seed/aws/400/400",
-      "verify": "https://aws.amazon.com/verify"
+      "title": "Laravel & PHP Web Development",
+      "organization": "Laravel",
+      "year": "2020",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=400&fit=crop",
+      "verify": "https://laravel.com"
     },
     {
       "title": "Meta React Developer",
       "organization": "Meta",
-      "year": "2022",
-      "image": "https://picsum.photos/seed/react/400/400",
+      "year": "2021",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
       "verify": "https://www.coursera.org/verify"
     },
     {
-      "title": "Laravel Certification",
-      "organization": "Laravel",
-      "year": "2021",
-      "image": "https://picsum.photos/seed/laravel/400/400",
-      "verify": "https://laravel.com/certification"
+      "title": "React Native Development",
+      "organization": "Udemy",
+      "year": "2022",
+      "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&h=400&fit=crop",
+      "verify": "https://www.udemy.com/certificate/XXXXXXXX"
+    },
+    {
+      "title": "AWS Certified Developer",
+      "organization": "Amazon Web Services",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+      "verify": "https://aws.amazon.com/verify"
+    },
+    {
+      "title": "Docker & DevOps",
+      "organization": "Udemy",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+      "verify": "https://www.udemy.com/certificate/XXXXXXXX"
+    },
+    {
+      "title": "AI & ChatGPT Integration",
+      "organization": "OpenAI",
+      "year": "2026",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+      "verify": "https://platform.openai.com/"
     }
   ],
   "projects": [
@@ -469,127 +752,209 @@
   "testimonials": [
     {
       "name": "Sarah Johnson",
-      "company": "TechCorp Inc.",
+      "company": "TechNova Solutions",
+      "position": "Project Manager",
+      "image": "https://i.pravatar.cc/300?img=1",
+      "rating": 5,
+      "review": "Suraj delivered our web application with exceptional quality and performance. His expertise in Laravel and React.js made the entire development process smooth and efficient."
+    },
+    {
+      "name": "Michael Chen",
+      "company": "InnovateX",
+      "position": "CEO",
+      "image": "https://i.pravatar.cc/300?img=11",
+      "rating": 5,
+      "review": "An outstanding Full Stack Developer with excellent communication skills. Every milestone was delivered on time and exceeded our expectations."
+    },
+    {
+      "name": "Emily Rodriguez",
+      "company": "Digital Bridge",
+      "position": "Product Owner",
+      "image": "https://i.pravatar.cc/300?img=5",
+      "rating": 5,
+      "review": "Suraj built a scalable and secure platform for our business. His problem-solving skills and attention to detail are truly impressive."
+    },
+    {
+      "name": "David Wilson",
+      "company": "CloudTech Labs",
+      "position": "Technical Lead",
+      "image": "https://i.pravatar.cc/300?img=12",
+      "rating": 5,
+      "review": "From API development to server deployment, Suraj handled everything professionally. I highly recommend him for complex web projects."
+    },
+    {
+      "name": "Sophia Martinez",
+      "company": "StartupHive",
+      "position": "Founder",
+      "image": "https://i.pravatar.cc/300?img=9",
+      "rating": 5,
+      "review": "Working with Suraj was a fantastic experience. He transformed our ideas into a modern, high-performing application with an excellent user experience."
+    },
+    {
+      "name": "James Anderson",
+      "company": "NextGen Software",
       "position": "CTO",
-      "image": "https://picsum.photos/seed/logo/200/200",
+      "image": "https://i.pravatar.cc/300?img=15",
       "rating": 5,
-      "review": "John is an exceptional developer. He delivered our project ahead of schedule with outstanding quality."
-    },
-    {
-      "name": "Michael Chen",
-      "company": "WebSolutions LLC",
-      "position": "CEO",
-      "image": "https://picsum.photos/seed/logo/200/200",
-      "rating": 5,
-      "review": "Working with John was a pleasure. His technical expertise and communication skills are top-notch."
-    },
-    {
-      "name": "Michael Chen",
-      "company": "WebSolutions LLC",
-      "position": "CEO",
-      "image": "https://picsum.photos/seed/logo/200/200",
-      "rating": 5,
-      "review": "Working with John was a pleasure. His technical expertise and communication skills are top-notch."
-    },
-    {
-      "name": "Michael Chen",
-      "company": "WebSolutions LLC",
-      "position": "CEO",
-      "image": "https://picsum.photos/seed/logo/200/200",
-      "rating": 5,
-      "review": "Working with John was a pleasure. His technical expertise and communication skills are top-notch."
+      "review": "Highly skilled in Laravel, React.js, VPS management, and DevOps. Suraj consistently delivers clean, maintainable, and production-ready code."
     }
   ],
   "pricing": [
     {
-      "title": "Starter Website",
-      "subtitle": "Perfect for startups & personal brands",
-      "price": "$199",
+      "title": "Landing Page / Portfolio",
+      "subtitle": "Perfect for freelancers, personal brands & startups",
+      "price": "$149",
       "period": "One-Time",
-      "description": "A professional responsive website to establish your online presence.",
+      "description": "Modern, responsive, and SEO-friendly landing page or portfolio website.",
       "features": [
-        "Up to 5 Pages",
-        "Fully Responsive Design",
-        "Modern UI/UX",
+        "1-5 Responsive Pages",
+        "Modern UI/UX Design",
+        "Mobile Friendly",
+        "SEO Optimization",
         "Contact Form",
-        "Basic SEO Setup",
         "Google Maps Integration",
-        "Social Media Links",
-        "Speed Optimization",
-        "1 Month Free Support"
+        "Social Media Integration",
+        "Performance Optimization",
+        "Free Deployment",
+        "1 Month Support"
       ],
-      "delivery": "5-7 Days",
+      "delivery": "3-5 Business Days",
       "featured": false,
-      "buttonText": "Start Project"
+      "buttonText": "Get Started"
     },
     {
       "title": "Business Website",
-      "subtitle": "Most popular choice for growing businesses",
+      "subtitle": "Best for companies & growing businesses",
       "price": "$499",
       "period": "One-Time",
-      "description": "Complete business website with advanced features and premium design.",
+      "description": "Professional business website with CMS, admin panel, and premium features.",
       "features": [
-        "Up to 15 Pages",
-        "Premium Responsive Design",
+        "Up to 20 Pages",
         "Admin Dashboard",
         "CMS Integration",
-        "Advanced SEO",
         "Blog Module",
-        "Image Optimization",
+        "Advanced SEO",
+        "Google Analytics",
         "Performance Optimization",
         "Security Setup",
-        "Google Analytics",
-        "3 Months Free Support"
+        "WhatsApp Integration",
+        "Free Hosting Setup",
+        "3 Months Support"
       ],
-      "delivery": "10-15 Days",
+      "delivery": "7-15 Business Days",
       "featured": true,
       "buttonText": "Hire Me"
     },
     {
       "title": "Custom Web Application",
-      "subtitle": "For SaaS, CRM, ERP & enterprise solutions",
-      "price": "Custom",
-      "period": "Quote",
-      "description": "Tailor-made web applications built according to your business requirements.",
+      "subtitle": "CRM, ERP, SaaS, Marketplace & Enterprise Solutions",
+      "price": "Custom Quote",
+      "period": "Project Based",
+      "description": "Enterprise-grade web applications built using Laravel, React.js, Next.js, and Node.js.",
       "features": [
-        "Unlimited Features",
-        "Laravel / Next.js Development",
+        "Unlimited Modules",
         "REST API Development",
-        "Authentication System",
+        "Authentication & Authorization",
         "Role & Permission Management",
-        "Payment Gateway Integration",
+        "Payment Gateway",
+        "Admin Panel",
+        "Dashboard & Reports",
         "Cloud Deployment",
-        "Database Design",
         "Source Code Included",
-        "Documentation",
         "6 Months Support"
       ],
       "delivery": "Depends on Scope",
       "featured": false,
       "buttonText": "Request Quote"
+    },
+    {
+      "title": "Mobile App Development",
+      "subtitle": "Android & iOS Applications",
+      "price": "From $699",
+      "period": "Project Based",
+      "description": "Cross-platform mobile applications using React Native with secure backend integration.",
+      "features": [
+        "Android & iOS",
+        "React Native",
+        "REST API Integration",
+        "Push Notifications",
+        "Firebase Integration",
+        "Authentication",
+        "Play Store Ready",
+        "App Store Ready",
+        "Source Code Included",
+        "3 Months Support"
+      ],
+      "delivery": "2-5 Weeks",
+      "featured": false,
+      "buttonText": "Build My App"
+    },
+    {
+      "title": "AI Integration & Automation",
+      "subtitle": "ChatGPT, OpenAI, Gemini & AI Workflows",
+      "price": "From $399",
+      "period": "Project Based",
+      "description": "Integrate AI into your website or application for automation, chatbots, content generation, and business intelligence.",
+      "features": [
+        "OpenAI Integration",
+        "ChatGPT Chatbot",
+        "Gemini API",
+        "AI Automation",
+        "Custom AI Assistant",
+        "Workflow Automation",
+        "Prompt Engineering",
+        "API Integration",
+        "Documentation",
+        "1 Month Support"
+      ],
+      "delivery": "5-10 Business Days",
+      "featured": false,
+      "buttonText": "Integrate AI"
+    },
+    {
+      "title": "DevOps & VPS Management",
+      "subtitle": "Deployment, Hosting & Server Optimization",
+      "price": "From $99",
+      "period": "Monthly / One-Time",
+      "description": "Professional server setup, deployment, security, monitoring, and maintenance services.",
+      "features": [
+        "Linux VPS Setup",
+        "cPanel / HestiaCP",
+        "Apache & Nginx",
+        "SSL Installation",
+        "Cloudflare Setup",
+        "Docker Deployment",
+        "CI/CD Pipeline",
+        "GitHub Actions",
+        "Server Security",
+        "Monthly Maintenance"
+      ],
+      "delivery": "1-3 Business Days",
+      "featured": false,
+      "buttonText": "Deploy Now"
     }
   ],
   "resume": {
     "file": "/resume.pdf",
-    "summary": "Full Stack Developer with 5+ years of experience building modern web applications. Expert in React, Laravel, and API development."
+    "summary": "Experienced Full Stack Developer with 5+ years of expertise in designing, developing, and deploying scalable web and mobile applications. Specialized in Laravel, React.js, Next.js, Node.js, React Native, REST APIs, AI integration, DevOps, VPS management, and cloud deployment. Passionate about building secure, high-performance, and user-centric digital solutions."
   },
   "contact": {
-    "email": "john@example.com",
-    "phone": "+1 234 567 890",
-    "whatsapp": "+1 234 567 890",
-    "address": "San Francisco, CA, USA",
-    "map": "https://maps.google.com/maps?q=San+Francisco"
+    "email": "your-email@example.com",
+    "phone": "+91 8706673327",
+    "whatsapp": "+91 8707673327",
+    "address": "Lucknow, Uttar Pradesh, India",
+    "map": "https://maps.google.com/?q=Lucknow,Uttar+Pradesh,India"
   },
   "socialLinks": {
-    "github": "https://github.com/johndoe",
-    "linkedin": "https://linkedin.com/in/johndoe",
-    "twitter": "https://twitter.com/johndoe",
-    "instagram": "https://instagram.com/johndoe",
-    "facebook": "https://facebook.com/johndoe",
-    "youtube": "https://youtube.com/johndoe"
+    "github": "https://github.com/skgautam7889",
+    "linkedin": "https://www.linkedin.com/in/suraj-kumar-865491185",
+    "twitter": "https://twitter.com/skgautam7889",
+    "instagram": "https://instagram.com/skgautam7889",
+    "facebook": "https://facebook.com/skgautam7889",
+    "portfolio": "https://yourdomain.com"
   },
   "footer": {
-    "description": "Full Stack Developer building modern, scalable web applications with React and Laravel.",
+    "description": "Experienced Full Stack Developer specializing in Laravel, React.js, Next.js, Node.js, React Native, AI Integration, DevOps, and scalable cloud-based web applications. Passionate about building secure, high-performance digital solutions that drive business growth.",
     "quickLinks": [
       {
         "name": "Home",
@@ -602,6 +967,14 @@
       {
         "name": "Skills",
         "hash": "#skills"
+      },
+      {
+        "name": "Services",
+        "hash": "#services"
+      },
+      {
+        "name": "Experience",
+        "hash": "#experience"
       },
       {
         "name": "Projects",
@@ -618,19 +991,27 @@
         "hash": "#services"
       },
       {
-        "name": "React Development",
+        "name": "Mobile App Development",
         "hash": "#services"
       },
       {
-        "name": "Laravel Development",
+        "name": "AI Integration",
         "hash": "#services"
       },
       {
         "name": "API Development",
         "hash": "#services"
+      },
+      {
+        "name": "DevOps & Cloud",
+        "hash": "#services"
+      },
+      {
+        "name": "VPS & Hosting",
+        "hash": "#services"
       }
     ],
-    "copyright": "© 2026 John Doe. All rights reserved."
+    "copyright": "© 2026 Suraj Kumar. Designed & Developed by Suraj Kumar. All Rights Reserved."
   },
   "settings": {
     "theme": "light",

@@ -26,7 +26,7 @@ const About = () => {
                         <div className="row g-3 mt-1">
                             {about?.personal &&
                                 Object.entries(about.personal).map(([key, value]) => (
-                                    <div key={key} className="col-6 col-md-4">
+                                    <div key={key} className="col-6 col-md-6">
                                         <strong
                                             style={{
                                                 textTransform: 'capitalize',

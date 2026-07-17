@@ -10,7 +10,6 @@ const VisitorTracker = () => {
             try {
                 // Prevent duplicate save in same browser session
                 const tracked = sessionStorage.getItem("visitor_tracked");
-                console.log("tracked==>", tracked)
                 if (tracked) {
                     // return;
                 }
@@ -74,7 +73,6 @@ const VisitorTracker = () => {
                 try {
                     const response = await fetch("https://ipwho.is/");
                     const data = await response.json();
-                    console.log("response==>", data);
 
                     ip = data.ip || "";
                     country = data.country || "";

@@ -68,7 +68,6 @@ const Footer = () => {
 
         // const res = await SubscriberService.subscribe(email);
         const res = await storeSubscribe(email);
-        console.log("res==>", res)
         const formData = {
           name: "Dev Span",
 
@@ -83,11 +82,8 @@ const Footer = () => {
           message: "Hello, I want to discuss a project.",
         };
         const response = await sendContactEmail(formData);
-        console.log("response==>", response)
         if (response.success) {
-          console.log("Email Sent");
         } else {
-          console.log(response.message);
         }
         // if (response.success) {
 
@@ -99,7 +95,7 @@ const Footer = () => {
 
         // }
 
-        console.log('Subscribe payload:', payload);
+        // console.log('Subscribe payload:', payload);
 
         /*
         const response = await fetch('/api/subscribe', {

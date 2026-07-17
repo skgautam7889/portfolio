@@ -203,8 +203,6 @@ const Contact = () => {
           formData.append("attachment", values.attachment);
         }
 
-        console.log("Contact form payload:", payload);
-        console.log("Contact form attachment:", values.attachment);
 
         /*
         const response = await fetch("/api/contact", {

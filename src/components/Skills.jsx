@@ -7,11 +7,27 @@ import {
   FaPhp,
   FaPython,
   FaGit,
+  FaGitAlt,
+  FaGithub,
+  FaBootstrap,
+  FaJs,
+  FaServer,
+  FaKey,
+  FaUserShield,
+  FaNetworkWired,
+  FaClock,
+  FaMobileAlt,
+  FaAndroid,
+  FaLinux,
+  FaUbuntu,
+  FaLock,
+  FaTerminal,
+  FaCodeBranch,
+  FaGlobe as FaGlobeIcon,
   FaBriefcase,
   FaProjectDiagram,
   FaUsers,
   FaCode,
-  FaMobileAlt,
   FaPaintBrush,
   FaDownload,
   FaEnvelope,
@@ -19,7 +35,6 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
   FaGraduationCap,
-  FaJs,
 } from "react-icons/fa";
 
 import {
@@ -31,7 +46,26 @@ import {
   SiMongodb,
   SiDocker,
   SiHtml5,
+  // SiCss3,
+  SiTailwindcss,
+  SiRedux,
+  SiJquery,
+  SiAxios,
+  SiReacthookform,
+  SiVite,
+  SiExpress,
+  SiRedis,
+  SiPhpmyadmin,
+  // SiAmazonaws,
+  SiApache,
+  SiNginx,
+  SiCloudflare,
+  // SiVisualstudiocode,
+  SiPostman,
+  SiComposer,
 } from "react-icons/si";
+
+import { FaNpm, FaYarn, FaFigma, FaJira } from "react-icons/fa6";
 
 import data from "../data/portfolio.json";
 import SectionTitle from "./common/SectionTitle";
@@ -69,11 +103,27 @@ const Skills = () => {
     FaPhp,
     FaPython,
     FaGit,
+    FaGitAlt,
+    FaGithub,
+    FaBootstrap,
+    FaJs,
+    FaServer,
+    FaKey,
+    FaUserShield,
+    FaNetworkWired,
+    FaClock,
+    FaMobileAlt,
+    FaAndroid,
+    FaLinux,
+    FaUbuntu,
+    FaLock,
+    FaTerminal,
+    FaCodeBranch,
+    FaGlobeIcon,
     FaBriefcase,
     FaProjectDiagram,
     FaUsers,
     FaCode,
-    FaMobileAlt,
     FaPaintBrush,
     FaDownload,
     FaEnvelope,
@@ -81,7 +131,6 @@ const Skills = () => {
     FaMapMarkerAlt,
     FaWhatsapp,
     FaGraduationCap,
-    FaJs,
 
     SiNextdotjs,
     SiTypescript,
@@ -91,6 +140,28 @@ const Skills = () => {
     SiMongodb,
     SiDocker,
     SiHtml5,
+    // SiCss3,
+    SiTailwindcss,
+    SiRedux,
+    SiJquery,
+    SiAxios,
+    SiReacthookform,
+    SiVite,
+    SiExpress,
+    SiRedis,
+    SiPhpmyadmin,
+    // SiAmazonaws,
+    SiApache,
+    SiNginx,
+    SiCloudflare,
+    // SiVisualstudiocode,
+    SiPostman,
+    SiComposer,
+
+    FaNpm,
+    FaYarn,
+    FaFigma,
+    FaJira,
   };
 
   return (
@@ -100,7 +171,7 @@ const Skills = () => {
           title="My Skills"
           subtitle="Technologies & tools I work with"
         />
-
+        <FaCode />
         {skills?.categories?.map((category, idx) => (
           <div key={idx} className="mb-5">
             <h4
@@ -155,7 +226,7 @@ function SkillCard({ skill, Icon, animate }) {
   return (
     <div className="card card--skill card--3d">
       <div className="skill-icon">
-        <Icon />
+        {/* <Icon /> */}
       </div>
 
       <h5 className="card-title">{skill.name}</h5>
