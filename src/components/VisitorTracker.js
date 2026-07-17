@@ -74,6 +74,7 @@ const VisitorTracker = () => {
                 try {
                     const response = await fetch("https://ipwho.is/");
                     const data = await response.json();
+                    console.log("response==>", data);
 
                     ip = data.ip || "";
                     country = data.country || "";

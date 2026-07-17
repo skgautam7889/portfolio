@@ -1,4 +1,7 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps } from "firebase/app";
+
+console.log(import.meta.env);
+console.log(import.meta.env.VITE_FIREBASE_API_KEY);
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -11,5 +14,12 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
+console.log("Firebase Apps:", getApps());
+console.log("Firebase App:", app);
+console.log("Project ID:", app.options);
+
+// console.log(db);
+
 
 export default app;
