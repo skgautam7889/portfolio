@@ -53,7 +53,7 @@ const Home = () => {
 
     return (
         <>
-            {/* <Hero />
+            <Hero />
             <Statistics />
             <About />
             <Skills />
@@ -63,11 +63,11 @@ const Home = () => {
             <Certificate />
             <Projects />
             <Testimonials />
-            <Pricing />
-            <Resume /> */}
+            {/* <Pricing /> */}
+            <Resume />
             <Contact />
-            {/* <CTA />
-            <FabButtons /> */}
+            <CTA />
+            <FabButtons />
         </>
     );
 };
