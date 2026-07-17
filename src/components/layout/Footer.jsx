@@ -20,6 +20,7 @@ import {
 import data from '../../data/portfolio.json';
 import Button from '../common/Button';
 import SubscriberService from '../../services/SubscriberService';
+import { sendContactEmail } from '../../services/web3FormsService';
 
 const subscribeValidationSchema = Yup.object({
   email: Yup.string()
@@ -68,7 +69,26 @@ const Footer = () => {
 
         const res = await SubscriberService.subscribe(email);
         console.log("res==>", res)
+        const formData = {
+          name: "Dev Span",
 
+          email: "skgautam7889@gmail.com",
+
+          phone: "+91 9876543210",
+
+          company: "ABC Pvt Ltd",
+
+          subject: "Portfolio Inquiry",
+
+          message: "Hello, I want to discuss a project.",
+        };
+        const response = await sendContactEmail(formData);
+        console.log("response==>", response)
+        if (response.success) {
+          console.log("Email Sent");
+        } else {
+          console.log(response.message);
+        }
         // if (response.success) {
 
         //   alert("Subscribed Successfully");
