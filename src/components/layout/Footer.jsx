@@ -19,7 +19,6 @@ import {
 
 import data from '../../data/portfolio.json';
 import Button from '../common/Button';
-import SubscriberService from '../../services/SubscriberService';
 import { sendContactEmail } from '../../services/web3FormsService';
 
 const subscribeValidationSchema = Yup.object({
@@ -67,7 +66,8 @@ const Footer = () => {
           email,
         };
 
-        const res = await SubscriberService.subscribe(email);
+        // const res = await SubscriberService.subscribe(email);
+        const res = await storeSubscribe(email);
         console.log("res==>", res)
         const formData = {
           name: "Dev Span",
