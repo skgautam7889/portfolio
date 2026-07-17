@@ -8,6 +8,7 @@ const Button = ({
     type = 'button',
     className = '',
     icon,
+    disabled = false,
     ...props
 }) => {
     const classes = `btn btn-${variant} btn-${size} ${className}`.trim();
@@ -30,7 +31,7 @@ const Button = ({
     }
 
     return (
-        <button type={type} className={classes} onClick={onClick} {...props}>
+        <button type={type} className={classes} onClick={onClick} disabled={disabled} {...props}>
             {icon && <span className="btn-icon">{icon}</span>}
             {children}
         </button>

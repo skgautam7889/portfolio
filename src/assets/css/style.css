@@ -2268,3 +2268,73 @@ textarea.form-control {
         width: 100%;
     }
 }
+
+
+
+
+/* footer */
+
+.footer-subscribe {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.footer-subscribe-field {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer-subscribe-field input {
+    width: 100%;
+}
+
+.footer-subscribe-error {
+    display: block;
+    min-height: 18px;
+    margin-top: 4px;
+    color: #dc3545;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.footer-subscribe-message {
+    min-height: 20px;
+    margin-top: 4px;
+}
+
+.footer-subscribe-api-error {
+    color: #dc3545;
+    font-size: 12px;
+}
+
+.footer-subscribe-success {
+    color: #198754;
+    font-size: 12px;
+}
+
+.footer-subscribe-button {
+    flex-shrink: 0;
+}
+
+.footer-subscribe-button--disabled,
+.footer-subscribe-button:disabled {
+    cursor: not-allowed !important;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.subscribe-spinner {
+    animation: subscribe-spinner-rotate 0.8s linear infinite;
+}
+
+@keyframes subscribe-spinner-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

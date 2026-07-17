@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "canvas-confetti": "^1.9.4",
+    "firebase": "^12.16.0",
     "formik": "^2.4.9",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
@@ -22,6 +23,7 @@
     "react-select": "^5.10.2",
     "react-toastify": "^11.1.0",
     "swiper": "^14.0.5",
+    "uuid": "^14.0.1",
     "yup": "^1.7.1"
   },
   "devDependencies": {
