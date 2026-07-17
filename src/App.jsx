@@ -25,6 +25,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from 'react';
 import { INSPECT_WARNING_MESSAGE } from './constants/messages';
 import { infoToast } from './utils/toast';
+import VisitorTracker from './components/VisitorTracker';
 function App() {
   const { website, seo } = data;
 
@@ -100,6 +101,7 @@ function App() {
       <ThemeProvider>
         <Router>
           <ScrollToTop />
+           <VisitorTracker />
           <CodeRainLoader />
           <Header />
           <main>
