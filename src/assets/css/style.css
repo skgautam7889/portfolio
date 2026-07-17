@@ -1963,107 +1963,308 @@ textarea.form-control {
 
 
 
-.testimonial-slider{
-    position:relative;
+.testimonial-slider {
+    position: relative;
 }
 
-.testimonial-card{
-    height:100%;
-    transition:.35s;
+.testimonial-card {
+    height: 100%;
+    transition: .35s;
 }
 
-.testimonial-card:hover{
-    transform:translateY(-8px);
+.testimonial-card:hover {
+    transform: translateY(-8px);
 }
 
-.testimonial-image{
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    object-fit:cover;
-    border:3px solid var(--color-primary);
+.testimonial-image {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-primary);
 }
 
-.testimonial-review{
-    line-height:1.8;
-    color:var(--color-text-secondary);
-    margin:18px 0;
-    min-height:120px;
+.testimonial-review {
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin: 18px 0;
+    min-height: 120px;
 }
 
-.testimonial-stars{
-    display:flex;
-    gap:4px;
-    color:#f4b400;
-    font-size:18px;
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+    color: #f4b400;
+    font-size: 18px;
 }
 
 /* Navigation */
 
-.testimonial-arrow{
-    position:absolute;
-    top:45%;
-    transform:translateY(-50%);
-    width:45px;
-    height:45px;
-    border:none;
-    border-radius:50%;
-    background:var(--color-primary);
-    color:#fff;
-    cursor:pointer;
-    z-index:20;
-    transition:.3s;
+.testimonial-arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    z-index: 20;
+    transition: .3s;
 }
 
-.testimonial-arrow:hover{
-    transform:translateY(-50%) scale(1.08);
+.testimonial-arrow:hover {
+    transform: translateY(-50%) scale(1.08);
 }
 
-.testimonial-prev{
-    left:-22px;
+.testimonial-prev {
+    left: -22px;
 }
 
-.testimonial-next{
-    right:-22px;
+.testimonial-next {
+    right: -22px;
 }
 
-.swiper{
-    padding-bottom:60px;
+.swiper {
+    padding-bottom: 60px;
 }
 
-.swiper-pagination-bullet{
-    width:10px;
-    height:10px;
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
 }
 
-.swiper-pagination-bullet-active{
-    background:var(--color-primary);
+.swiper-pagination-bullet-active {
+    background: var(--color-primary);
 }
 
 /* Tablet */
 
-@media(max-width:991px){
+@media(max-width:991px) {
 
-    .testimonial-arrow{
-        display:none;
+    .testimonial-arrow {
+        display: none;
     }
 
-    .testimonial-review{
-        min-height:140px;
+    .testimonial-review {
+        min-height: 140px;
     }
 
 }
 
 /* Mobile */
 
-@media(max-width:576px){
+@media(max-width:576px) {
 
-    .testimonial-card{
-        padding:20px !important;
+    .testimonial-card {
+        padding: 20px !important;
     }
 
-    .testimonial-review{
-        min-height:auto;
+    .testimonial-review {
+        min-height: auto;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form-alert {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.875rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contact-form-alert--success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.contact-form-alert--error {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.contact-phone-container.react-tel-input {
+    width: 100%;
+}
+
+.contact-phone-container.react-tel-input .contact-phone-input.form-control {
+    width: 100%;
+    height: 46px;
+    padding: 0.375rem 0.75rem 0.375rem 58px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    background-color: #ffffff;
+    color: #212529;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition:
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.contact-phone-container.react-tel-input .contact-phone-input.form-control:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.contact-phone-container.react-tel-input .contact-phone-input.form-control:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.contact-phone-container.react-tel-input .contact-country-button.flag-dropdown {
+    width: 48px;
+    border: 1px solid #dee2e6;
+    border-right: 0;
+    border-radius: 0.375rem 0 0 0.375rem;
+    background-color: #ffffff;
+}
+
+.contact-phone-container.react-tel-input .contact-country-button.flag-dropdown:hover,
+.contact-phone-container.react-tel-input .contact-country-button.flag-dropdown.open {
+    background-color: #f8f9fa;
+}
+
+.contact-phone-container.react-tel-input .contact-country-button.flag-dropdown.open .selected-flag {
+    background-color: transparent;
+}
+
+.contact-phone-container.react-tel-input .selected-flag {
+    width: 47px;
+    padding-left: 12px;
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.contact-phone-container--invalid.react-tel-input .contact-phone-input.form-control,
+.contact-phone-container--invalid.react-tel-input .contact-country-button.flag-dropdown {
+    border-color: #dc3545;
+}
+
+.contact-phone-container--invalid.react-tel-input .contact-phone-input.form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.contact-phone-container.react-tel-input .contact-country-dropdown.country-list {
+    width: 360px;
+    max-width: calc(100vw - 32px);
+    max-height: 300px;
+    margin-top: 4px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    overflow-x: hidden;
+}
+
+.contact-phone-container.react-tel-input .contact-country-dropdown.country-list .search {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.contact-phone-container.react-tel-input .contact-country-search.search-box {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.contact-phone-container.react-tel-input .contact-country-search.search-box:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+.contact-phone-container.react-tel-input .contact-country-dropdown.country-list .country {
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.contact-phone-container.react-tel-input .contact-country-dropdown.country-list .country.highlight,
+.contact-phone-container.react-tel-input .contact-country-dropdown.country-list .country:hover {
+    background-color: #f1f3f5;
+}
+
+.contact-field-error {
+    width: 100%;
+    margin-top: 0.25rem;
+    color: #dc3545;
+    font-size: 0.875em;
+}
+
+.contact-file-help {
+    display: block;
+    margin-top: 0.375rem;
+}
+
+.contact-submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+}
+
+.contact-submit-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.contact-spinner {
+    animation: contact-spinner-rotate 0.8s linear infinite;
+}
+
+@keyframes contact-spinner-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-phone-container.react-tel-input .contact-country-dropdown.country-list {
+        width: calc(100vw - 48px);
+    }
+
+    .contact-submit-button {
+        width: 100%;
+    }
 }

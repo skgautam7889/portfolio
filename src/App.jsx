@@ -22,8 +22,45 @@ import PWAInstallPrompt from './components/pwa/PWAInstallPrompt';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useEffect } from 'react';
+import { INSPECT_WARNING_MESSAGE } from './constants/messages';
+import { infoToast } from './utils/toast';
 function App() {
   const { website, seo } = data;
+
+  useEffect(() => {
+    const showWarning = () => {
+      // warningToast(INSPECT_WARNING_MESSAGE);
+      infoToast(INSPECT_WARNING_MESSAGE);
+      // errorToast(INSPECT_WARNING_MESSAGE);
+    };
+
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+      showWarning();
+    };
+
+    const handleKeyDown = (e) => {
+      const key = e.key.toUpperCase();
+
+      if (
+        key === "F12" ||
+        (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(key)) ||
+        (e.ctrlKey && key === "U")
+      ) {
+        e.preventDefault();
+        showWarning();
+      }
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
   return (
     <>
       <ToastContainer

@@ -53,49 +53,21 @@ const Home = () => {
 
     return (
         <>
-            {/* ===== HERO ===== */}
-            <Hero />
-            {/* ===== STATISTICS ===== */}
+            {/* <Hero />
             <Statistics />
-
-
-            {/* ===== ABOUT ===== */}
             <About />
-
-            {/* ===== SKILLS ===== */}
             <Skills />
-
-            {/* ===== SERVICES ===== */}
             <Services />
-
-            {/* ===== EXPERIENCE ===== */}
             <Experience />
-
-            {/* ===== EDUCATION ===== */}
             <Education />
-
-            {/* ===== CERTIFICATES ===== */}
             <Certificate />
-
-            {/* ===== PROJECTS ===== */}
             <Projects />
-
-            {/* ===== TESTIMONIALS ===== */}
             <Testimonials />
-
-            {/* ===== PRICING ===== */}
-            {/* <Pricing /> */}
-
-            {/* ===== RESUME ===== */}
-            <Resume />
-            {/* ===== CONTACT ===== */}
+            <Pricing />
+            <Resume /> */}
             <Contact />
-
-            {/* ===== CTA ===== */}
-            <CTA />
-
-            {/* ===== FAB BUTTONS ===== */}
-            <FabButtons />
+            {/* <CTA />
+            <FabButtons /> */}
         </>
     );
 };
