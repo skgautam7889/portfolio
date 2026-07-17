@@ -502,48 +502,71 @@
   ],
   "pricing": [
     {
-      "title": "Basic",
-      "price": "$49",
-      "period": "month",
+      "title": "Starter Website",
+      "subtitle": "Perfect for startups & personal brands",
+      "price": "$199",
+      "period": "One-Time",
+      "description": "A professional responsive website to establish your online presence.",
       "features": [
-        "1 Project",
-        "5 Pages",
-        "Responsive Design",
-        "Basic SEO",
-        "Email Support"
+        "Up to 5 Pages",
+        "Fully Responsive Design",
+        "Modern UI/UX",
+        "Contact Form",
+        "Basic SEO Setup",
+        "Google Maps Integration",
+        "Social Media Links",
+        "Speed Optimization",
+        "1 Month Free Support"
       ],
+      "delivery": "5-7 Days",
       "featured": false,
-      "buttonText": "Get Started"
+      "buttonText": "Start Project"
     },
     {
-      "title": "Pro",
-      "price": "$99",
-      "period": "month",
+      "title": "Business Website",
+      "subtitle": "Most popular choice for growing businesses",
+      "price": "$499",
+      "period": "One-Time",
+      "description": "Complete business website with advanced features and premium design.",
       "features": [
-        "5 Projects",
-        "15 Pages",
-        "Responsive Design",
+        "Up to 15 Pages",
+        "Premium Responsive Design",
+        "Admin Dashboard",
+        "CMS Integration",
         "Advanced SEO",
-        "Priority Support",
-        "API Integration"
+        "Blog Module",
+        "Image Optimization",
+        "Performance Optimization",
+        "Security Setup",
+        "Google Analytics",
+        "3 Months Free Support"
       ],
+      "delivery": "10-15 Days",
       "featured": true,
-      "buttonText": "Get Pro"
+      "buttonText": "Hire Me"
     },
     {
-      "title": "Enterprise",
-      "price": "$249",
-      "period": "month",
+      "title": "Custom Web Application",
+      "subtitle": "For SaaS, CRM, ERP & enterprise solutions",
+      "price": "Custom",
+      "period": "Quote",
+      "description": "Tailor-made web applications built according to your business requirements.",
       "features": [
-        "Unlimited Projects",
-        "Unlimited Pages",
-        "Responsive Design",
-        "Full SEO Suite",
-        "24/7 Support",
-        "Custom Solutions"
+        "Unlimited Features",
+        "Laravel / Next.js Development",
+        "REST API Development",
+        "Authentication System",
+        "Role & Permission Management",
+        "Payment Gateway Integration",
+        "Cloud Deployment",
+        "Database Design",
+        "Source Code Included",
+        "Documentation",
+        "6 Months Support"
       ],
+      "delivery": "Depends on Scope",
       "featured": false,
-      "buttonText": "Contact Us"
+      "buttonText": "Request Quote"
     }
   ],
   "resume": {

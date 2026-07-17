@@ -84,7 +84,7 @@ const Home = () => {
             <Testimonials />
 
             {/* ===== PRICING ===== */}
-            <Pricing />
+            {/* <Pricing /> */}
 
             {/* ===== RESUME ===== */}
             <Resume />

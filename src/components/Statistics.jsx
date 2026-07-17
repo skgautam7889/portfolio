@@ -29,6 +29,7 @@ import {
     SiDocker,
     SiHtml5,
 } from 'react-icons/si';
+import Counter from './Counter';
 
 const Statistics = () => {
     const { statistics } = data;
@@ -71,7 +72,7 @@ const Statistics = () => {
                                 <div style={{ fontSize: '2rem', color: 'var(--color-text-primary)' }}>
                                     <Icon />
                                 </div>
-                                <h2 className="stat-number">{stat.value}</h2>
+                                <h2 className="stat-number"><Counter value={stat.value} /></h2>
                                 <p className="stat-label">{stat.label}</p>
                             </div>
                         );
