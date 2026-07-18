@@ -75,7 +75,6 @@ const Skills = () => {
 
   const sectionRef = useRef(null);
   const [animate, setAnimate] = useState(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -85,7 +84,8 @@ const Skills = () => {
         }
       },
       {
-        threshold: 0.3,
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
       },
     );
 
@@ -225,9 +225,7 @@ function SkillCard({ skill, Icon, animate }) {
 
   return (
     <div className="card card--skill card--3d">
-      <div className="skill-icon">
-        {/* <Icon /> */}
-      </div>
+      <div className="skill-icon">{/* <Icon /> */}</div>
 
       <h5 className="card-title">{skill.name}</h5>
 

@@ -270,7 +270,7 @@ p {
 
 /* Container */
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -999,7 +999,7 @@ textarea.form-control {
     visibility: visible;
 }
 
-.offcanvas {
+/* .offcanvas {
     position: fixed;
     top: 0;
     right: -320px;
@@ -1015,7 +1015,9 @@ textarea.form-control {
 
 .offcanvas--open {
     right: 0;
-}
+} */
+
+
 
 .offcanvas .close-btn {
     position: absolute;
@@ -1070,6 +1072,7 @@ textarea.form-control {
     width: 100%;
     justify-content: center;
 }
+
 
 @media (max-width: 991px) {
     .nav-links {
@@ -2346,4 +2349,23 @@ textarea.form-control {
 
 .hero-image img {
     height: 450px;
+}
+
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: var(--color-offcanvas-bg);
+    z-index: var(--z-offcanvas);
+    padding: 30px 24px;
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-lg);
+    overflow-y: auto;
+}
+
+.offcanvas--open {
+    right: 0;
 }
