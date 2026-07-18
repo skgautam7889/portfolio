@@ -53,16 +53,16 @@ const Home = () => {
 
     return (
         <>
-            {/* <Hero />
+            <Hero />
             <Statistics />
-            <About /> */}
+            <About />
             <Skills />
-            {/* <Services />
+            <Services />
             <Experience />
             <Education />
             <Certificate />
             <Projects />
-            <Testimonials /> */}
+            <Testimonials />
             {/* <Pricing /> */}
             <Resume />
             <Contact />
