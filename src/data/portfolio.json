@@ -1,8 +1,8 @@
 {
   "website": {
     "name": "Suraj Kumar",
-    "logo": "https://picsum.photos/seed/logo/200/200",
-    "favicon": "https://picsum.photos/seed/favicon/64/64",
+    "logo": "/images/personal/suraj-about.jpg",
+    "favicon": "/images/personal/suraj-about.jpg",
     "title": "Suraj Kumar | Full Stack Developer",
     "description": "Experienced Full Stack Developer specializing in Laravel, PHP, React.js, Node.js, MySQL, PostgreSQL, and REST API development. Passionate about building scalable web applications and modern digital solutions.",
     "keywords": "Suraj Kumar, Full Stack Developer, Laravel Developer, PHP Developer, React.js, Node.js, MERN Stack, MySQL, PostgreSQL, REST API, Web Development, Software Engineer",
@@ -15,7 +15,7 @@
     "description": "Explore the professional portfolio of Suraj Kumar, a Full Stack Developer with expertise in Laravel, PHP, React.js, Node.js, MySQL, PostgreSQL, REST APIs, and scalable web application development.",
     "keywords": "Suraj Kumar, Full Stack Developer, Laravel, PHP, React.js, Node.js, MERN Stack, Portfolio, Software Developer, REST API, Web Development",
     "author": "Suraj Kumar",
-    "ogImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop"
+    "ogImage": "/images/personal/suraj-about.jpg"
   },
   "navigation": [
     {
@@ -52,7 +52,7 @@
     "designation": "Full Stack Developer",
     "subtitle": "Building scalable, high-performance web applications with Laravel, React.js, Node.js, and modern web technologies.",
     "description": "Experienced Full Stack Developer with 5+ years of expertise in designing and developing secure, scalable, and user-centric web applications. Skilled in PHP, Laravel, React.js, Node.js, MySQL, PostgreSQL, REST APIs, and modern JavaScript frameworks. Passionate about solving complex problems and delivering high-quality digital solutions.",
-    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&crop=face",
+    "image": "/images/personal/suraj-about.jpg",
     "buttons": {
       "hire": "#contact",
       "resume": "/resume/Suraj_Kumar_Resume.pdf",
@@ -67,7 +67,7 @@
     }
   },
   "about": {
-    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop&crop=face",
+    "image": "/images/personal/suraj-about.jpg",
     "title": "About Me",
     "description": "I'm a passionate Full Stack Developer with over 5 years of professional experience in designing, developing, and deploying scalable web applications. My expertise spans Laravel, PHP, React.js, Node.js, MySQL, PostgreSQL, RESTful APIs, and modern JavaScript technologies. I enjoy solving complex business challenges by building secure, efficient, and user-focused digital solutions.",
     "objective": "To contribute to innovative organizations by developing high-quality, scalable, and performance-driven web applications while continuously learning emerging technologies and delivering exceptional user experiences.",
@@ -513,7 +513,7 @@
         "Cloudflare",
         "Postman"
       ],
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjV47Y0R8JU-niC_5PHWOWHPV6JMl0v78EGMB4CGFAUjRQ5fyJ70WOOR_3&s=10"
+      "logo": "/images/experience/jamtech.png"
     },
     {
       "company": "Kraftors Web Solutions Pvt. Ltd.",
@@ -545,7 +545,7 @@
         "Apache",
         "cPanel"
       ],
-      "logo": "https://thekraftors.com/kraftors_logo_white_bg.png"
+      "logo": "/images/experience/kraftors.png"
     }
   ],
   "education": [
@@ -555,7 +555,7 @@
       "university": "Board of Technical Education, Uttar Pradesh",
       "year": "2017 - 2020",
       "description": "Built a strong foundation in Computer Science, Software Engineering, Database Management Systems, Data Structures, Operating Systems, Computer Networks, and Web Development. Completed multiple academic and practical projects focused on modern software development.",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3iX9C6Byus6jNu-5MyG1geiukdPRVYPTnYJwo0qU4whsYQg-1DG9zXo&s=10"
+      "logo": "/images/education/diploma.png"
     },
     {
       "degree": "Higher Secondary (12th)",
@@ -563,7 +563,7 @@
       "university": "Uttar Pradesh Board",
       "year": "2016 - 2017",
       "description": "Completed Higher Secondary education with a focus on Science and Mathematics, building a strong analytical and technical foundation.",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3iX9C6Byus6jNu-5MyG1geiukdPRVYPTnYJwo0qU4whsYQg-1DG9zXo&s=10"
+      "logo": "/images/education/12th.png"
     },
     {
       "degree": "Secondary School (10th)",
@@ -571,7 +571,7 @@
       "university": "Uttar Pradesh Board",
       "year": "2014 - 2015",
       "description": "Completed secondary education with excellent academic performance and developed a strong interest in technology and programming.",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3iX9C6Byus6jNu-5MyG1geiukdPRVYPTnYJwo0qU4whsYQg-1DG9zXo&s=10"
+      "logo": "/images/education/10th.png"
     }
   ],
   "certificates": [
@@ -579,42 +579,42 @@
       "title": "Laravel & PHP Web Development",
       "organization": "Laravel",
       "year": "2020",
-      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=400&fit=crop",
+      "image": "/images/certificate/laravel.png",
       "verify": "https://laravel.com"
     },
     {
       "title": "Meta React Developer",
       "organization": "Meta",
       "year": "2021",
-      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+      "image": "/images/certificate/laravel.png",
       "verify": "https://www.coursera.org/verify"
     },
     {
       "title": "React Native Development",
       "organization": "Udemy",
       "year": "2022",
-      "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&h=400&fit=crop",
+      "image": "/images/certificate/laravel.png",
       "verify": "https://www.udemy.com/certificate/XXXXXXXX"
     },
     {
       "title": "AWS Certified Developer",
       "organization": "Amazon Web Services",
       "year": "2023",
-      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+      "image": "/images/certificate/laravel.png",
       "verify": "https://aws.amazon.com/verify"
     },
     {
       "title": "Docker & DevOps",
       "organization": "Udemy",
       "year": "2025",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+      "image": "/images/certificate/laravel.png",
       "verify": "https://www.udemy.com/certificate/XXXXXXXX"
     },
     {
       "title": "AI & ChatGPT Integration",
       "organization": "OpenAI",
       "year": "2026",
-      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+      "image": "/images/certificate/laravel.png",
       "verify": "https://platform.openai.com/"
     }
   ],
@@ -754,7 +754,7 @@
       "name": "Sarah Johnson",
       "company": "TechNova Solutions",
       "position": "Project Manager",
-      "image": "https://i.pravatar.cc/300?img=1",
+      "image": "/images/testimonial/sarah-johnson.png",
       "rating": 5,
       "review": "Suraj delivered our web application with exceptional quality and performance. His expertise in Laravel and React.js made the entire development process smooth and efficient."
     },
@@ -762,7 +762,7 @@
       "name": "Michael Chen",
       "company": "InnovateX",
       "position": "CEO",
-      "image": "https://i.pravatar.cc/300?img=11",
+      "image": "/images/testimonial/michael-chen.png",
       "rating": 5,
       "review": "An outstanding Full Stack Developer with excellent communication skills. Every milestone was delivered on time and exceeded our expectations."
     },
@@ -770,7 +770,7 @@
       "name": "Emily Rodriguez",
       "company": "Digital Bridge",
       "position": "Product Owner",
-      "image": "https://i.pravatar.cc/300?img=5",
+      "image": "/images/testimonial/emily-rodriguez.png",
       "rating": 5,
       "review": "Suraj built a scalable and secure platform for our business. His problem-solving skills and attention to detail are truly impressive."
     },
@@ -778,7 +778,7 @@
       "name": "David Wilson",
       "company": "CloudTech Labs",
       "position": "Technical Lead",
-      "image": "https://i.pravatar.cc/300?img=12",
+      "image": "/images/testimonial/david.png",
       "rating": 5,
       "review": "From API development to server deployment, Suraj handled everything professionally. I highly recommend him for complex web projects."
     },
@@ -786,7 +786,7 @@
       "name": "Sophia Martinez",
       "company": "StartupHive",
       "position": "Founder",
-      "image": "https://i.pravatar.cc/300?img=9",
+      "image": "/images/testimonial/sophia-martinez.png",
       "rating": 5,
       "review": "Working with Suraj was a fantastic experience. He transformed our ideas into a modern, high-performing application with an excellent user experience."
     },
@@ -794,7 +794,7 @@
       "name": "James Anderson",
       "company": "NextGen Software",
       "position": "CTO",
-      "image": "https://i.pravatar.cc/300?img=15",
+      "image": "/images/testimonial/james-anderson.png",
       "rating": 5,
       "review": "Highly skilled in Laravel, React.js, VPS management, and DevOps. Suraj consistently delivers clean, maintainable, and production-ready code."
     }
@@ -939,7 +939,7 @@
     "summary": "Experienced Full Stack Developer with 5+ years of expertise in designing, developing, and deploying scalable web and mobile applications. Specialized in Laravel, React.js, Next.js, Node.js, React Native, REST APIs, AI integration, DevOps, VPS management, and cloud deployment. Passionate about building secure, high-performance, and user-centric digital solutions."
   },
   "contact": {
-    "email": "your-email@example.com",
+    "email": "surajkumargautam7889@gmail.com",
     "phone": "+91 8707673327",
     "whatsapp": "+91 8707673327",
     "address": "Lucknow, Uttar Pradesh, India",

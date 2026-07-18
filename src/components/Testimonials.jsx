@@ -76,10 +76,7 @@ const Testimonials = () => {
                     }}
                   >
                     <img
-                      src={
-                        testimonial.image ||
-                        "https://images.unsplash.com/photo-1494790108379-be9c6b7ee3b6?w=200&h=200&fit=crop&crop=face"
-                      }
+                      src={testimonial.image}
                       alt={testimonial.name}
                       className="testimonial-image"
                     />

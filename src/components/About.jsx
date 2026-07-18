@@ -12,8 +12,8 @@ const About = () => {
                 <SectionTitle title="About Me" subtitle="Get to know me" />
                 <div className="row align-items-center g-5">
                     <div className="col-lg-5 animate-fade-in-up">
-                        <div className="overflow-hidden radius-lg shadow-lg" style={{ border: '4px solid var(--color-white)' }}>
-                            <img src={about?.image || 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop&crop=face'} alt="Profile" className="w-100 d-block" />
+                        <div className="overflow-hidden about-image radius-lg shadow-lg" style={{ border: '4px solid var(--color-white)' }}>
+                            <img src={about?.image} height={50} alt="Profile" className="w-100 d-block" />
                         </div>
                     </div>
                     <div className="col-lg-7 animate-fade-in-up" style={{ animationDelay: '0.15s' }}>

@@ -59,8 +59,8 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                        <div className="hero-image-wrap animate-float">
-                            <img src={hero?.image || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&crop=face'} alt={hero?.name || 'Hero'} />
+                        <div className="hero-image-wrap hero-image animate-float">
+                            <img src={hero?.image} alt={hero?.name || 'Hero'} />
                         </div>
                     </div>
                 </div>

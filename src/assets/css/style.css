@@ -886,7 +886,7 @@ textarea.form-control {
 
 .logo img {
     height: 40px;
-    width: auto;
+    width: 40px;
 }
 
 .logo span {
@@ -2337,4 +2337,13 @@ textarea.form-control {
     to {
         transform: rotate(360deg);
     }
+}
+
+
+.about-image img {
+    height: 600px;
+}
+
+.hero-image img {
+    height: 450px;
 }
