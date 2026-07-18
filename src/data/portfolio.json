@@ -621,132 +621,140 @@
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "slug": "ecommerce-platform",
-      "category": "React",
-      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+      "title": "Hotel Booking & Channel Manager",
+      "slug": "hotel-booking-channel-manager",
+      "category": "Laravel",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop",
       "technologies": [
-        "React",
         "Laravel",
+        "React.js",
         "MySQL",
-        "Stripe"
+        "REST API",
+        "Google Hotel Center"
       ],
-      "description": "A full-featured e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
-      "features": [
-        "Product catalog with search and filters",
-        "Shopping cart and checkout",
-        "Payment integration with Stripe",
-        "Admin dashboard for inventory management"
-      ],
-      "challenges": "Real-time inventory sync and payment security",
-      "solutions": "Implemented webhooks and JWT authentication",
-      "lessons": "Security and scalability are paramount in e-commerce",
-      "github": "https://github.com/johndoe/ecommerce",
-      "demo": "https://ecommerce.johndoe.com"
+      "description": "Enterprise hotel booking and channel management platform with Google Hotel Center integration, dynamic pricing, reservations, and OTA synchronization.",
+      "github": "#",
+      "demo": "#"
     },
     {
       "id": 2,
-      "title": "Task Management App",
-      "slug": "task-management-app",
+      "title": "Business ERP & CRM System",
+      "slug": "business-erp-crm",
       "category": "Laravel",
-      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
       "technologies": [
         "Laravel",
-        "Vue.js",
+        "React.js",
         "MySQL",
-        "Tailwind"
+        "Bootstrap"
       ],
-      "description": "A collaborative task management tool with real-time updates and team collaboration features.",
-      "features": [
-        "Task boards with drag-and-drop",
-        "Team collaboration and comments",
-        "Real-time notifications",
-        "Progress tracking and reports"
-      ],
-      "challenges": "Real-time sync across multiple users",
-      "solutions": "Used Laravel Echo and WebSockets",
-      "lessons": "Real-time features require careful architecture",
-      "github": "https://github.com/johndoe/taskapp",
-      "demo": "https://task.johndoe.com"
+      "description": "Complete ERP & CRM solution with employee management, invoicing, HR, finance, customer management, and reporting dashboard.",
+      "github": "#",
+      "demo": "#"
     },
     {
       "id": 3,
-      "title": "Portfolio Website",
-      "slug": "portfolio-website",
-      "category": "React",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      "title": "E-Commerce Marketplace",
+      "slug": "ecommerce-marketplace",
+      "category": "Full Stack",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
       "technologies": [
-        "React",
-        "Vite",
-        "Bootstrap",
-        "JSON"
+        "Laravel",
+        "React.js",
+        "Stripe",
+        "MySQL"
       ],
-      "description": "A professional portfolio website with dark/light theme and JSON-based content.",
-      "features": [
-        "Fully responsive design",
-        "Dark/Light theme toggle",
-        "JSON-driven content",
-        "SEO optimized"
-      ],
-      "challenges": "Theme switching and performance",
-      "solutions": "Context API with localStorage",
-      "lessons": "Content-driven architecture is key for maintainability",
-      "github": "https://github.com/johndoe/portfolio",
-      "demo": "https://johndoe.com"
+      "description": "Modern multi-vendor eCommerce platform with secure payments, inventory management, order tracking, and admin dashboard.",
+      "github": "#",
+      "demo": "#"
     },
     {
       "id": 4,
-      "title": "RESTful API Gateway",
-      "slug": "restful-api-gateway",
-      "category": "API",
-      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
+      "title": "AI Chat & Automation Platform",
+      "slug": "ai-chat-automation",
+      "category": "AI",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
       "technologies": [
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "JWT"
+        "OpenAI",
+        "Laravel",
+        "React.js",
+        "Node.js"
       ],
-      "description": "A scalable API gateway with authentication, rate limiting, and logging.",
-      "features": [
-        "JWT authentication",
-        "Rate limiting and throttling",
-        "Request logging and monitoring",
-        "API versioning"
-      ],
-      "challenges": "Performance and security",
-      "solutions": "Implemented caching and security best practices",
-      "lessons": "Security is a continuous process",
-      "github": "https://github.com/johndoe/apigateway",
-      "demo": "https://api.johndoe.com"
+      "description": "AI-powered chatbot and workflow automation platform with OpenAI integration, document processing, and intelligent customer support.",
+      "github": "#",
+      "demo": "#"
     },
     {
       "id": 5,
-      "title": "Mobile Food Delivery App",
-      "slug": "mobile-food-delivery",
+      "title": "Social Media Platform",
+      "slug": "social-media-platform",
+      "category": "React",
+      "image": "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=400&h=300&fit=crop",
+      "technologies": [
+        "React.js",
+        "Laravel",
+        "MySQL",
+        "Socket.io"
+      ],
+      "description": "Feature-rich social networking platform with posts, messaging, notifications, company pages, and real-time communication.",
+      "github": "#",
+      "demo": "#"
+    },
+    {
+      "id": 6,
+      "title": "React Native Delivery App",
+      "slug": "react-native-delivery-app",
       "category": "Mobile",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=600&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop",
       "technologies": [
         "React Native",
         "Firebase",
-        "Stripe"
+        "REST API"
       ],
-      "description": "A cross-platform food delivery app with real-time order tracking and payment.",
-      "features": [
-        "Restaurant browsing and search",
-        "Order placement and tracking",
-        "Payment integration",
-        "Push notifications"
+      "description": "Cross-platform delivery application with authentication, live order tracking, push notifications, and payment integration.",
+      "github": "#",
+      "demo": "#"
+    },
+    {
+      "id": 7,
+      "title": "Portfolio CMS",
+      "slug": "portfolio-cms",
+      "category": "Next.js",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Bootstrap",
+        "JSON"
       ],
-      "challenges": "Cross-platform consistency",
-      "solutions": "Used React Native with native modules",
-      "lessons": "Native modules are essential for performance",
-      "github": "https://github.com/johndoe/foodapp",
-      "demo": "https://food.johndoe.com"
+      "description": "Modern portfolio management system with dynamic JSON configuration, SEO optimization, dark mode, and responsive design.",
+      "github": "https://github.com/skgautam7889",
+      "demo": "#"
+    },
+    {
+      "id": 8,
+      "title": "Cloud Server & DevOps Automation",
+      "slug": "cloud-devops-automation",
+      "category": "DevOps",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
+      "technologies": [
+        "Docker",
+        "Linux",
+        "Nginx",
+        "GitHub Actions",
+        "VPS"
+      ],
+      "description": "Automated deployment pipeline with Docker, CI/CD, SSL configuration, VPS management, server monitoring, and production optimization.",
+      "github": "#",
+      "demo": "#"
     }
   ],
   "testimonials": [

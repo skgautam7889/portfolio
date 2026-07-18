@@ -1,8 +1,8 @@
 // src/components/layout/Footer.jsx
 
-import { useState } from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
+import { useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import {
   FaGithub,
   FaLinkedin,
@@ -15,24 +15,28 @@ import {
   // FaMapMarkerAlt,
   FaPaperPlane,
   FaSpinner,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
-import data from '../../data/portfolio.json';
-import Button from '../common/Button';
-import { sendContactEmail } from '../../services/web3FormsService';
+import data from "../../data/portfolio.json";
+import Button from "../common/Button";
+import {
+  sendContactEmail,
+  sendSubscriberEmail,
+} from "../../services/web3FormsService";
+import { storeSubscribe } from "../../services/subscriberService";
 
 const subscribeValidationSchema = Yup.object({
   email: Yup.string()
     .trim()
-    .required('Email address is required.')
-    .email('Please enter a valid email address.'),
+    .required("Email address is required.")
+    .email("Please enter a valid email address."),
 });
 
 const Footer = () => {
   const { footer, socialLinks, website } = data;
 
   const [subscribed, setSubscribed] = useState(false);
-  const [subscribeError, setSubscribeError] = useState('');
+  const [subscribeError, setSubscribeError] = useState("");
 
   const socialIcons = {
     github: FaGithub,
@@ -45,7 +49,7 @@ const Footer = () => {
 
   const subscribeFormik = useFormik({
     initialValues: {
-      email: '',
+      email: "",
     },
     validationSchema: subscribeValidationSchema,
     validateOnMount: true,
@@ -58,67 +62,15 @@ const Footer = () => {
         return;
       }
 
-      setSubscribeError('');
+      setSubscribeError("");
       setSubscribed(false);
 
       try {
-        const payload = {
-          email,
-        };
-
-        // const res = await SubscriberService.subscribe(email);
         const res = await storeSubscribe(email);
-        const formData = {
-          name: "Dev Span",
 
-          email: "skgautam7889@gmail.com",
-
-          phone: "+91 9876543210",
-
-          company: "ABC Pvt Ltd",
-
-          subject: "Portfolio Inquiry",
-
-          message: "Hello, I want to discuss a project.",
-        };
-        const response = await sendContactEmail(formData);
-        if (response.success) {
-        } else {
+        if (res.success) {
+          await sendSubscriberEmail(email);
         }
-        // if (response.success) {
-
-        //   alert("Subscribed Successfully");
-
-        // } else {
-
-        //   alert(response.message);
-
-        // }
-
-        // console.log('Subscribe payload:', payload);
-
-        /*
-        const response = await fetch('/api/subscribe', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify(payload),
-        });
-
-        const responseData = await response.json();
-
-        if (!response.ok) {
-          throw new Error(
-            responseData.message ||
-              'Unable to subscribe. Please try again.',
-          );
-        }
-        */
-
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-
         setSubscribed(true);
         resetForm();
 
@@ -126,13 +78,9 @@ const Footer = () => {
           setSubscribed(false);
         }, 3000);
       } catch (error) {
-        console.error('Subscription failed:', error);
+        console.error("Subscription failed:", error);
 
-        setSubscribeError(
-          error instanceof Error
-            ? error.message
-            : 'Something went wrong. Please try again.',
-        );
+        setSubscribeError( error instanceof Error  ? error.message  : "Something went wrong. Please try again.");
       } finally {
         setSubmitting(false);
       }
@@ -145,7 +93,7 @@ const Footer = () => {
     }
 
     if (subscribeError) {
-      setSubscribeError('');
+      setSubscribeError("");
     }
 
     subscribeFormik.handleChange(event);
@@ -174,11 +122,11 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <h3>
-              {website?.name || 'Portfolio'}
+              {website?.name || "Portfolio"}
               <span>.</span>
             </h3>
 
-            <p>{footer?.description || ''}</p>
+            <p>{footer?.description || ""}</p>
 
             <div className="footer-social">
               {socialLinks &&
@@ -229,9 +177,9 @@ const Footer = () => {
 
             <p
               style={{
-                fontSize: '0.9rem',
+                fontSize: "0.9rem",
                 opacity: 0.7,
-                marginBottom: '12px',
+                marginBottom: "12px",
               }}
             >
               Get the latest updates and offers.
@@ -254,9 +202,9 @@ const Footer = () => {
                   disabled={subscribeFormik.isSubmitting || subscribed}
                   className={
                     subscribeFormik.touched.email &&
-                      subscribeFormik.errors.email
-                      ? 'is-invalid'
-                      : ''
+                    subscribeFormik.errors.email
+                      ? "is-invalid"
+                      : ""
                   }
                   autoComplete="email"
                   aria-invalid={
@@ -270,10 +218,9 @@ const Footer = () => {
                   id="subscribeEmailError"
                   className="footer-subscribe-error"
                 >
-                  {subscribeFormik.touched.email &&
-                    subscribeFormik.errors.email
+                  {subscribeFormik.touched.email && subscribeFormik.errors.email
                     ? subscribeFormik.errors.email
-                    : ''}
+                    : ""}
                 </span>
               </div>
 
@@ -284,10 +231,9 @@ const Footer = () => {
                 disabled={isSubscribeDisabled}
                 aria-disabled={isSubscribeDisabled}
                 onClick={handleSubscribeButtonClick}
-                className={`footer-subscribe-button ${isSubscribeDisabled
-                  ? 'footer-subscribe-button--disabled'
-                  : ''
-                  }`}
+                className={`footer-subscribe-button ${
+                  isSubscribeDisabled ? "footer-subscribe-button--disabled" : ""
+                }`}
                 icon={
                   subscribeFormik.isSubmitting ? (
                     <FaSpinner className="subscribe-spinner" />
@@ -297,28 +243,22 @@ const Footer = () => {
                 }
               >
                 {subscribeFormik.isSubmitting
-                  ? 'Subscribing...'
+                  ? "Subscribing..."
                   : subscribed
-                    ? '✓ Done'
-                    : 'Subscribe'}
+                    ? "✓ Done"
+                    : "Subscribe"}
               </Button>
             </form>
 
             <div className="footer-subscribe-message">
               {subscribeError && (
-                <span
-                  className="footer-subscribe-api-error"
-                  role="alert"
-                >
+                <span className="footer-subscribe-api-error" role="alert">
                   {subscribeError}
                 </span>
               )}
 
               {subscribed && (
-                <span
-                  className="footer-subscribe-success"
-                  role="status"
-                >
+                <span className="footer-subscribe-success" role="status">
                   You have subscribed successfully.
                 </span>
               )}
@@ -328,7 +268,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           {footer?.copyright ||
-            `© ${new Date().getFullYear()} ${website?.name || 'Portfolio'
+            `© ${new Date().getFullYear()} ${
+              website?.name || "Portfolio"
             }. All rights reserved.`}
         </div>
       </div>

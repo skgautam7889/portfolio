@@ -16,10 +16,11 @@ import data from "../data/portfolio.json";
 
 import "react-phone-input-2/lib/style.css";
 import "./Contact.css";
+import { storeContact } from "../services/contactService";
+import { sendContactEmail } from "../services/web3FormsService";
 
 const MAX_FILE_SIZE = 50 * 1024 * 1024;
-const PhoneInput =
-  PhoneInputModule.default || PhoneInputModule;
+const PhoneInput = PhoneInputModule.default || PhoneInputModule;
 
 const ALLOWED_FILE_EXTENSIONS = [
   "jpg",
@@ -81,9 +82,7 @@ const validationSchema = Yup.object({
       (file) => {
         if (!file) return true;
 
-        return ALLOWED_FILE_EXTENSIONS.includes(
-          getFileExtension(file.name),
-        );
+        return ALLOWED_FILE_EXTENSIONS.includes(getFileExtension(file.name));
       },
     ),
 
@@ -194,7 +193,6 @@ const Contact = () => {
         };
 
         const formData = new FormData();
-
         Object.entries(payload).forEach(([key, value]) => {
           formData.append(key, String(value));
         });
@@ -202,30 +200,10 @@ const Contact = () => {
         if (values.attachment) {
           formData.append("attachment", values.attachment);
         }
-
-
-        /*
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-          },
-          body: formData,
-        });
-
-        const responseData = await response.json();
-
-        if (!response.ok) {
-          throw new Error(
-            responseData.message || "Unable to send your message.",
-          );
+        const res = await storeContact(payload);
+        if (res.success) {
+          await sendContactEmail(payload);
         }
-        */
-
-        await new Promise((resolve) => {
-          setTimeout(resolve, 2000);
-        });
-
         setSubmitStatus({
           type: "success",
           message: "Message sent successfully!",
@@ -260,17 +238,9 @@ const Contact = () => {
   const handlePhoneChange = (value, countryData) => {
     clearSubmitStatus();
 
-    formik.setFieldValue(
-      "countryIso",
-      countryData?.countryCode || "",
-      false,
-    );
+    formik.setFieldValue("countryIso", countryData?.countryCode || "", false);
 
-    formik.setFieldValue(
-      "dialCode",
-      countryData?.dialCode || "",
-      false,
-    );
+    formik.setFieldValue("dialCode", countryData?.dialCode || "", false);
 
     formik.setFieldValue("phone", value || "", true);
   };
@@ -282,11 +252,7 @@ const Contact = () => {
   const handleWhatsappChange = (event) => {
     clearSubmitStatus();
 
-    formik.setFieldValue(
-      "isWhatsapp",
-      event.target.checked,
-      true,
-    );
+    formik.setFieldValue("isWhatsapp", event.target.checked, true);
   };
 
   const handleFileChange = (event) => {
@@ -298,8 +264,7 @@ const Contact = () => {
     formik.setFieldTouched("attachment", true, false);
   };
 
-  const phoneHasError =
-    formik.touched.phone && Boolean(formik.errors.phone);
+  const phoneHasError = formik.touched.phone && Boolean(formik.errors.phone);
 
   const isSubmitDisabled =
     formik.isSubmitting || !formik.isValid || !formik.dirty;
@@ -307,10 +272,7 @@ const Contact = () => {
   return (
     <section id="contact" className="section section-white">
       <div className="container">
-        <SectionTitle
-          title="Get In Touch"
-          subtitle="Let's work together"
-        />
+        <SectionTitle title="Get In Touch" subtitle="Let's work together" />
 
         <div className="row g-5">
           <div className="col-lg-4">
@@ -328,27 +290,19 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <p className="contact-label">
-                      {item.label}
-                    </p>
+                    <p className="contact-label">{item.label}</p>
 
                     {item.href ? (
                       <a
                         href={item.href}
-                        target={
-                          item.label === "Address"
-                            ? "_blank"
-                            : "_self"
-                        }
+                        target={item.label === "Address" ? "_blank" : "_self"}
                         rel="noopener noreferrer"
                         className="contact-value"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <span className="contact-value">
-                        {item.value}
-                      </span>
+                      <span className="contact-value">{item.value}</span>
                     )}
                   </div>
                 </div>
@@ -358,16 +312,14 @@ const Contact = () => {
 
           <div className="col-lg-8">
             <div className="card contact-form-card">
-              <form
-                onSubmit={formik.handleSubmit}
-                noValidate
-              >
+              <form onSubmit={formik.handleSubmit} noValidate>
                 {submitStatus.message && (
                   <div
-                    className={`contact-form-alert ${submitStatus.type === "success"
-                      ? "contact-form-alert--success"
-                      : "contact-form-alert--error"
-                      }`}
+                    className={`contact-form-alert ${
+                      submitStatus.type === "success"
+                        ? "contact-form-alert--success"
+                        : "contact-form-alert--error"
+                    }`}
                     role="alert"
                   >
                     {submitStatus.message}
@@ -375,10 +327,7 @@ const Contact = () => {
                 )}
 
                 <div className="form-group mb-3">
-                  <label
-                    className="form-label"
-                    htmlFor="name"
-                  >
+                  <label className="form-label" htmlFor="name">
                     Full Name *
                   </label>
 
@@ -386,11 +335,11 @@ const Contact = () => {
                     id="name"
                     type="text"
                     name="name"
-                    className={`form-control ${formik.touched.name &&
-                      formik.errors.name
-                      ? "is-invalid"
-                      : ""
-                      }`}
+                    className={`form-control ${
+                      formik.touched.name && formik.errors.name
+                        ? "is-invalid"
+                        : ""
+                    }`}
                     value={formik.values.name}
                     onChange={handleFieldChange}
                     onBlur={formik.handleBlur}
@@ -399,19 +348,13 @@ const Contact = () => {
                     disabled={formik.isSubmitting}
                   />
 
-                  {formik.touched.name &&
-                    formik.errors.name && (
-                      <div className="invalid-feedback">
-                        {formik.errors.name}
-                      </div>
-                    )}
+                  {formik.touched.name && formik.errors.name && (
+                    <div className="invalid-feedback">{formik.errors.name}</div>
+                  )}
                 </div>
 
                 <div className="form-group mb-3">
-                  <label
-                    className="form-label"
-                    htmlFor="email"
-                  >
+                  <label className="form-label" htmlFor="email">
                     Email Address *
                   </label>
 
@@ -419,11 +362,11 @@ const Contact = () => {
                     id="email"
                     type="email"
                     name="email"
-                    className={`form-control ${formik.touched.email &&
-                      formik.errors.email
-                      ? "is-invalid"
-                      : ""
-                      }`}
+                    className={`form-control ${
+                      formik.touched.email && formik.errors.email
+                        ? "is-invalid"
+                        : ""
+                    }`}
                     value={formik.values.email}
                     onChange={handleFieldChange}
                     onBlur={formik.handleBlur}
@@ -432,19 +375,15 @@ const Contact = () => {
                     disabled={formik.isSubmitting}
                   />
 
-                  {formik.touched.email &&
-                    formik.errors.email && (
-                      <div className="invalid-feedback">
-                        {formik.errors.email}
-                      </div>
-                    )}
+                  {formik.touched.email && formik.errors.email && (
+                    <div className="invalid-feedback">
+                      {formik.errors.email}
+                    </div>
+                  )}
                 </div>
 
                 <div className="form-group mb-3">
-                  <label
-                    className="form-label"
-                    htmlFor="phone"
-                  >
+                  <label className="form-label" htmlFor="phone">
                     Phone Number *
                   </label>
 
@@ -460,13 +399,7 @@ const Contact = () => {
                     disableSearchIcon={false}
                     searchPlaceholder="Search country..."
                     searchNotFound="No country found"
-                    preferredCountries={[
-                      "in",
-                      "us",
-                      "gb",
-                      "ae",
-                      "au",
-                    ]}
+                    preferredCountries={["in", "us", "gb", "ae", "au"]}
                     specialLabel=""
                     disabled={formik.isSubmitting}
                     inputProps={{
@@ -475,10 +408,9 @@ const Contact = () => {
                       autoComplete: "tel",
                       inputMode: "tel",
                     }}
-                    containerClass={`contact-phone-container ${phoneHasError
-                      ? "contact-phone-container--invalid"
-                      : ""
-                      }`}
+                    containerClass={`contact-phone-container ${
+                      phoneHasError ? "contact-phone-container--invalid" : ""
+                    }`}
                     inputClass="contact-phone-input"
                     buttonClass="contact-country-button"
                     dropdownClass="contact-country-dropdown"
@@ -503,20 +435,13 @@ const Contact = () => {
                     disabled={formik.isSubmitting}
                   />
 
-                  <label
-                    className="form-check-label"
-                    htmlFor="isWhatsappCheck"
-                  >
-                    This number is also available on
-                    WhatsApp
+                  <label className="form-check-label" htmlFor="isWhatsappCheck">
+                    &nbsp;This number is also available on WhatsApp
                   </label>
                 </div>
 
-                <div className="form-group mb-3">
-                  <label
-                    className="form-label"
-                    htmlFor="attachment"
-                  >
+                {/* <div className="form-group mb-3">
+                  <label className="form-label" htmlFor="attachment">
                     Attachment (optional)
                   </label>
 
@@ -525,34 +450,30 @@ const Contact = () => {
                     id="attachment"
                     type="file"
                     name="attachment"
-                    className={`form-control ${formik.touched.attachment &&
-                      formik.errors.attachment
-                      ? "is-invalid"
-                      : ""
-                      }`}
+                    className={`form-control ${
+                      formik.touched.attachment && formik.errors.attachment
+                        ? "is-invalid"
+                        : ""
+                    }`}
                     accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.zip"
                     onChange={handleFileChange}
                     disabled={formik.isSubmitting}
                   />
 
                   <small className="contact-file-help text-muted">
-                    Allowed: JPG, JPEG, PNG, PDF, DOC,
-                    DOCX, ZIP. Maximum size: 50 MB.
+                    Allowed: JPG, JPEG, PNG, PDF, DOC, DOCX, ZIP. Maximum size:
+                    50 MB.
                   </small>
 
-                  {formik.touched.attachment &&
-                    formik.errors.attachment && (
-                      <div className="contact-field-error">
-                        {formik.errors.attachment}
-                      </div>
-                    )}
-                </div>
+                  {formik.touched.attachment && formik.errors.attachment && (
+                    <div className="contact-field-error">
+                      {formik.errors.attachment}
+                    </div>
+                  )}
+                </div> */}
 
                 <div className="form-group mb-3">
-                  <label
-                    className="form-label"
-                    htmlFor="subject"
-                  >
+                  <label className="form-label" htmlFor="subject">
                     Subject *
                   </label>
 
@@ -560,11 +481,11 @@ const Contact = () => {
                     id="subject"
                     type="text"
                     name="subject"
-                    className={`form-control ${formik.touched.subject &&
-                      formik.errors.subject
-                      ? "is-invalid"
-                      : ""
-                      }`}
+                    className={`form-control ${
+                      formik.touched.subject && formik.errors.subject
+                        ? "is-invalid"
+                        : ""
+                    }`}
                     value={formik.values.subject}
                     onChange={handleFieldChange}
                     onBlur={formik.handleBlur}
@@ -572,19 +493,15 @@ const Contact = () => {
                     disabled={formik.isSubmitting}
                   />
 
-                  {formik.touched.subject &&
-                    formik.errors.subject && (
-                      <div className="invalid-feedback">
-                        {formik.errors.subject}
-                      </div>
-                    )}
+                  {formik.touched.subject && formik.errors.subject && (
+                    <div className="invalid-feedback">
+                      {formik.errors.subject}
+                    </div>
+                  )}
                 </div>
 
                 <div className="form-group mb-3">
-                  <label
-                    className="form-label"
-                    htmlFor="message"
-                  >
+                  <label className="form-label" htmlFor="message">
                     Message *
                   </label>
 
@@ -592,11 +509,11 @@ const Contact = () => {
                     id="message"
                     rows={5}
                     name="message"
-                    className={`form-control ${formik.touched.message &&
-                      formik.errors.message
-                      ? "is-invalid"
-                      : ""
-                      }`}
+                    className={`form-control ${
+                      formik.touched.message && formik.errors.message
+                        ? "is-invalid"
+                        : ""
+                    }`}
                     value={formik.values.message}
                     onChange={handleFieldChange}
                     onBlur={formik.handleBlur}
@@ -604,12 +521,11 @@ const Contact = () => {
                     disabled={formik.isSubmitting}
                   />
 
-                  {formik.touched.message &&
-                    formik.errors.message && (
-                      <div className="invalid-feedback">
-                        {formik.errors.message}
-                      </div>
-                    )}
+                  {formik.touched.message && formik.errors.message && (
+                    <div className="invalid-feedback">
+                      {formik.errors.message}
+                    </div>
+                  )}
                 </div>
 
                 <button
