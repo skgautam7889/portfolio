@@ -1,105 +1,50 @@
-
-import Toast from "../helpers/toastHelper";
 import Button from "./common/Button";
 
 const CTA = () => {
-    const testPromise = () => {
-        Toast.promise(
-            new Promise((resolve) => {
-                setTimeout(() => {
-                    resolve();
-                }, 3000);
-            }),
-            {
-                pending: "Uploading...",
-                success: "Upload Successful!",
-                error: "Upload Failed!",
-            }
-        );
-    };
-
-    const testLoading = () => {
-        const id = Toast.loading("Please wait...");
-
-        setTimeout(() => {
-            Toast.update(id, "Completed Successfully!", "success");
-        }, 3000);
-    };
     return (
-        <>
-            <div className="container py-5">
+        <section className="section-cta">
+            <div className="container text-center">
 
-                <h3 className="mb-4">React Toastify Test</h3>
+                <span className="badge bg-primary px-3 py-2 mb-3">
+                    🚀 Available for Full-Time, Part-Time, Freelance, Contract-Based & Remote Opportunities
+                </span>
 
-                <div className="d-flex flex-wrap gap-3">
+                <h2 className="fw-bold mb-3">
+                    Let's Build Your Next{" "}
+                    <span style={{ color: "var(--color-text-primary)" }}>
+                        Digital Solution
+                    </span>
+                </h2>
 
-                    <button
-                        className="btn btn-success"
-                        onClick={() => Toast.success("Success Message")}
-                    >
-                        Success
-                    </button>
+                <p
+                    style={{
+                        maxWidth: "800px",
+                        margin: "0 auto 30px",
+                        fontSize: "1.1rem",
+                        lineHeight: "1.8",
+                    }}
+                >
+                    I'm a <strong>Full Stack Developer</strong> with expertise in
+                    <strong> Laravel, React.js, Next.js, Node.js, React Native, AI Integration,
+                    REST APIs, DevOps, VPS Management,</strong> and
+                    <strong> Cloud Deployment</strong>. Whether you're building a startup,
+                    scaling an enterprise application, or need an experienced developer for your team,
+                    I'm ready to deliver secure, scalable, and high-performance solutions.
+                </p>
 
-                    <button
-                        className="btn btn-danger"
-                        onClick={() => Toast.error("Error Message")}
-                    >
-                        Error
-                    </button>
+                <div className="d-flex justify-content-center flex-wrap gap-3">
+                    <Button href="#contact" variant="primary" size="lg">
+                        Hire Me
+                    </Button>
 
-                    <button
-                        className="btn btn-warning"
-                        onClick={() => Toast.warning("Warning Message")}
-                    >
-                        Warning
-                    </button>
-
-                    <button
-                        className="btn btn-info text-white"
-                        onClick={() => Toast.info("Information Message")}
-                    >
-                        Info
-                    </button>
-
-                    <button
-                        className="btn btn-primary"
-                        onClick={testLoading}
-                    >
-                        Loading
-                    </button>
-
-                    <button
-                        className="btn btn-secondary"
-                        onClick={testPromise}
-                    >
-                        Promise
-                    </button>
-
-                    <button
-                        className="btn btn-dark"
-                        onClick={() => Toast.dismiss()}
-                    >
-                        Dismiss All
-                    </button>
-
+                    <Button href="/resume.pdf" variant="outline-primary" size="lg">
+                        Download Resume
+                    </Button>
                 </div>
 
             </div>
-            <section className="section-cta">
-                <div className="container text-center">
-                    <h2>
-                        Ready to build something{' '}
-                        <span style={{ color: 'var(--color-text-primary)' }}>amazing</span>?
-                    </h2>
-                    <p style={{ maxWidth: '500px', margin: '12px auto 24px', fontSize: '1.05rem' }}>
-                        Let's collaborate and create something extraordinary together.
-                    </p>
-                    <Button href="#contact" variant="primary" size="lg">
-                        Let's Talk
-                    </Button>
-                </div>
-            </section>
-        </>
-    )
-}
+        </section>
+    );
+};
+
 export default CTA;

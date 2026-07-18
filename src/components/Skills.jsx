@@ -171,7 +171,7 @@ const Skills = () => {
           title="My Skills"
           subtitle="Technologies & tools I work with"
         />
-        <FaCode />
+        {/* <FaCode /> */}
         {skills?.categories?.map((category, idx) => (
           <div key={idx} className="mb-5">
             <h4

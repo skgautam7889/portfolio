@@ -8,6 +8,7 @@ import {
     FaLinkedin,
     FaTwitter,
     FaInstagram,
+    FaFacebook,
 } from 'react-icons/fa';
 const Hero = () => {
     const { hero, socialLinks } = data;
@@ -16,6 +17,7 @@ const Hero = () => {
         linkedin: FaLinkedin,
         twitter: FaTwitter,
         instagram: FaInstagram,
+        facebook: FaFacebook,
     };
 
     return (
