@@ -30,7 +30,8 @@ const Header = () => {
                 <div className="container">
                     <Link to="/" className="logo">
                         <img src={data.website?.logo || '/images/logo/logo.svg'} alt={data.website?.name || 'Logo'} />
-                        <span>{data.website?.name || 'Portfolio'}</span>
+                        <span>{data.website?.first_name || 'Portfolio'}</span>
+                        <span className='last_name'>{data.website?.last_name || 'Portfolio'}</span>
                     </Link>
 
                     <ul className="nav-links">

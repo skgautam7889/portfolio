@@ -1,6 +1,8 @@
 {
   "website": {
     "name": "Suraj Kumar",
+    "first_name": "Suraj",
+    "last_name": "Kumar",
     "logo": "/images/personal/suraj-about.jpg",
     "favicon": "/images/personal/suraj-about.jpg",
     "title": "Suraj Kumar | Full Stack Developer",
@@ -233,21 +235,6 @@
             "name": "Cron Jobs",
             "percentage": 90,
             "icon": "FaClock"
-          }
-        ]
-      },
-      {
-        "name": "Mobile",
-        "skills": [
-          {
-            "name": "React Native",
-            "percentage": 80,
-            "icon": "FaMobileAlt"
-          },
-          {
-            "name": "Android",
-            "percentage": 75,
-            "icon": "FaAndroid"
           }
         ]
       },

@@ -2369,3 +2369,13 @@ textarea.form-control {
 .offcanvas--open {
     right: 0;
 }
+
+.last_name {
+    display: block;
+}
+
+@media (max-width: 575.98px) {
+    .last_name {
+        display: none;
+    }
+}
