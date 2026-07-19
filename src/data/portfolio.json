@@ -537,6 +537,14 @@
   ],
   "education": [
     {
+      "degree": "Bachelor of Technology (B.Tech) in Computer Science & Engineering",
+      "college": "Indus Institute of Technology and Management",
+      "university": "Dr. A.P.J. Abdul Kalam Technical University (AKTU), Uttar Pradesh",
+      "year": "2021 - 2024",
+      "description": "Completed a Bachelor's degree in Computer Science & Engineering with a focus on Software Development, Data Structures & Algorithms, Database Management Systems, Operating Systems, Computer Networks, Cloud Computing, and Full-Stack Web Development. Worked on industry-oriented projects using modern technologies.",
+      "logo": "/images/education/btech.png"
+    },
+    {
       "degree": "Diploma in Computer Science & Engineering",
       "college": "Government Polytechnic Unnao",
       "university": "Board of Technical Education, Uttar Pradesh",
