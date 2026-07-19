@@ -1,39 +1,97 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import ScrollToTop from './components/common/ScrollToTop';
+
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+
+import ScrollToTop from "./components/common/ScrollToTop";
 
 // Layout
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import AdminLayout from "./components/admin/AdminLayout";
 
 // Pages
-import Home from './pages/Home/Home';
-import NotFound from './pages/NotFound/NotFound';
+import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
+import Subscribers from "./pages/admin/Subscribers";
+import Contacts from "./pages/admin/Contacts";
+import Visitors from "./pages/admin/Visitors";
+import Login from "./pages/auth/Login";
+import Unauthorized from "./pages/auth/Unauthorized";
+import ProtectedRoute from "./components/admin/ProtectedRoute";
+import Dashboard from "./pages/admin/Dashboard";
 
 // Bootstrap Grid CSS only
-import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import "bootstrap/dist/css/bootstrap-grid.min.css";
 // Global CSS
-import './assets/css/style.css';
-import ThemeProvider from './context/ThemeProvider';
-import CodeRainLoader from './components/CodeRainLoader';
-import data from './data/portfolio.json';
-import { Helmet } from 'react-helmet-async';
-import PWAInstallPrompt from './components/pwa/PWAInstallPrompt';
+import "./assets/css/style.css";
+import ThemeProvider from "./context/ThemeProvider";
+import CodeRainLoader from "./components/CodeRainLoader";
+import data from "./data/portfolio.json";
+import { Helmet } from "react-helmet-async";
+import PWAInstallPrompt from "./components/pwa/PWAInstallPrompt";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useEffect } from 'react';
-import { INSPECT_WARNING_MESSAGE } from './constants/messages';
-import { infoToast } from './utils/toast';
-import VisitorTracker from './components/VisitorTracker';
+import { useEffect } from "react";
+import { INSPECT_WARNING_MESSAGE } from "./constants/messages";
+import { infoToast } from "./utils/toast";
+import VisitorTracker from "./components/VisitorTracker";
+
+// ✅ Wrapper component to conditionally show Header
+const AppContent = () => {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith('/admin');
+  const isLoginRoute = location.pathname === '/login';
+  const isUnauthorizedRoute = location.pathname === '/unauthorized';
+  
+  // ✅ Hide Header on admin, login, and unauthorized pages
+  const hideHeader = isAdminRoute || isLoginRoute || isUnauthorizedRoute;
+
+  return (
+    <>
+      <ScrollToTop />
+      <VisitorTracker />
+      <CodeRainLoader />
+      
+      {/* ✅ Header - Hidden on admin/login/unauthorized pages */}
+      {!hideHeader && <Header />}
+      
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/unauthorized" element={<Unauthorized />} />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                <AdminLayout />
+              </ProtectedRoute>
+            }
+          >
+            <Route index element={<Dashboard />} />
+            <Route path="subscribers" element={<Subscribers />} />
+            <Route path="contacts" element={<Contacts />} />
+            <Route path="visitors" element={<Visitors />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      
+      {/* ✅ Footer - Hidden on admin/login/unauthorized pages */}
+      {!hideHeader && <Footer />}
+      
+      <PWAInstallPrompt />
+    </>
+  );
+};
+
 function App() {
   const { website, seo } = data;
 
   // useEffect(() => {
   //   const showWarning = () => {
-  //     // warningToast(INSPECT_WARNING_MESSAGE);
   //     infoToast(INSPECT_WARNING_MESSAGE);
-  //     // errorToast(INSPECT_WARNING_MESSAGE);
   //   };
 
   //   const handleContextMenu = (e) => {
@@ -62,6 +120,7 @@ function App() {
   //     document.removeEventListener("keydown", handleKeyDown);
   //   };
   // }, []);
+
   return (
     <>
       <ToastContainer
@@ -71,47 +130,56 @@ function App() {
         newestOnTop
         pauseOnFocusLoss={false}
       />
+      
       <Helmet>
-        <title>{seo?.title || website?.title || 'Portfolio'}</title>
-        <meta name="description" content={seo?.description || website?.description || ''} />
-        <meta name="keywords" content={seo?.keywords || website?.keywords || ''} />
-        <meta name="author" content={seo?.author || website?.author || ''} />
+        <title>{seo?.title || website?.title || "Portfolio"}</title>
+        <meta
+          name="description"
+          content={seo?.description || website?.description || ""}
+        />
+        <meta
+          name="keywords"
+          content={seo?.keywords || website?.keywords || ""}
+        />
+        <meta name="author" content={seo?.author || website?.author || ""} />
 
         {/* Open Graph / Social Media */}
         <meta property="og:title" content={seo?.title || website?.title} />
-        <meta property="og:description" content={seo?.description || website?.description} />
-        <meta property="og:image" content={seo?.ogImage || '/og-image.jpg'} />
+        <meta
+          property="og:description"
+          content={seo?.description || website?.description}
+        />
+        <meta property="og:image" content={seo?.ogImage || "/og-image.jpg"} />
         <meta property="og:url" content={window.location.href} />
         <meta property="og:type" content="website" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seo?.title || website?.title} />
-        <meta name="twitter:description" content={seo?.description || website?.description} />
-        <meta name="twitter:image" content={seo?.ogImage || '/og-image.jpg'} />
+        <meta
+          name="twitter:description"
+          content={seo?.description || website?.description}
+        />
+        <meta name="twitter:image" content={seo?.ogImage || "/og-image.jpg"} />
 
         {/* Theme Color (for mobile browsers) */}
         <meta name="theme-color" content="#0d6efd" />
 
-        {/* Favicon – you can also set dynamically */}
-        <link rel="icon" type="image/svg+xml" href={website?.favicon || '/favicon.svg'} />
-        <link rel="apple-touch-icon" href={website?.favicon || '/favicon.svg'} />
+        {/* Favicon */}
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={website?.favicon || "/favicon.svg"}
+        />
+        <link
+          rel="apple-touch-icon"
+          href={website?.favicon || "/favicon.svg"}
+        />
       </Helmet>
 
       <ThemeProvider>
         <Router>
-          <ScrollToTop />
-           <VisitorTracker />
-          <CodeRainLoader />
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-          <PWAInstallPrompt />
+          <AppContent />
         </Router>
       </ThemeProvider>
     </>

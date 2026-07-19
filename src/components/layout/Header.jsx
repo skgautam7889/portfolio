@@ -1,9 +1,9 @@
-// src/components/layout/Header.jsx
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaSun, FaMoon, FaTimes } from 'react-icons/fa';
 import data from '../../data/portfolio.json';
 import useTheme from '../../context/useTheme';
+// import './Header.css';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -11,6 +11,10 @@ const Header = () => {
     const { theme, toggleTheme } = useTheme();
     const location = useLocation();
     const navItems = data.navigation || [];
+
+    // ✅ Hide header on admin pages
+    const isAdminRoute = location.pathname.startsWith('/admin');
+    if (isAdminRoute) return null;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,7 +25,7 @@ const Header = () => {
     }, []);
 
     useEffect(() => {
-        // setMobileOpen(false);
+        setMobileOpen(false);
     }, [location]);
 
     return (
@@ -60,6 +64,7 @@ const Header = () => {
                 </div>
             </header>
 
+            {/* Mobile Offcanvas */}
             <div className={`offcanvas-overlay ${mobileOpen ? 'offcanvas-overlay--open' : ''}`} onClick={() => setMobileOpen(false)} />
 
             <div className={`offcanvas ${mobileOpen ? 'offcanvas--open' : ''}`}>
