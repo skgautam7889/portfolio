@@ -9,6 +9,7 @@ import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { handleMouseLeave, handleMouseMove } from "../utils/general.helper";
 
 const Testimonials = () => {
   const { testimonials } = data;
@@ -64,8 +65,10 @@ const Testimonials = () => {
               <SwiperSlide key={idx}>
                 {/* Your Original Card */}
                 <div
-                  className="card card--3d testimonial-card"
+                  className="card card-3d testimonial-card"
                   style={{ padding: "24px" }}
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
                 >
                   <div
                     style={{

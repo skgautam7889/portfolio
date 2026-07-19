@@ -37,6 +37,7 @@ import {
 import data from "../data/portfolio.json";
 import SectionTitle from "./common/SectionTitle";
 import { useRef } from "react";
+import { handleMouseLeave, handleMouseMove } from "../utils/general.helper";
 
 const Services = () => {
   const { services } = data;
@@ -75,11 +76,12 @@ const Services = () => {
     FaCodeBranch,
   };
   const cardRefs = useRef([]);
+  
   return (
     <section id="services" className="section section-white">
       <div className="container">
         <SectionTitle title="My Services" subtitle="What I can do for you" />
-        <div className="row g-4 stagger-children">
+        <div className="row g-4">
           {services?.map((service, idx) => {
             const Icon = iconMap[service.icon] || FaGlobe;
             return (
@@ -88,7 +90,11 @@ const Services = () => {
                 className="col-md-6 col-lg-4"
                 ref={(el) => (cardRefs.current[100 + idx] = el)}
               >
-                <div className="card card--service card--3d">
+                <div
+                  className="card card-3d"
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <div className="card-icon">
                     <Icon />
                   </div>

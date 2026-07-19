@@ -69,6 +69,7 @@ import { FaNpm, FaYarn, FaFigma, FaJira } from "react-icons/fa6";
 
 import data from "../data/portfolio.json";
 import SectionTitle from "./common/SectionTitle";
+import { handleMouseLeave, handleMouseMove } from "../utils/general.helper";
 
 const Skills = () => {
   const { skills } = data;
@@ -224,8 +225,14 @@ function SkillCard({ skill, Icon, animate }) {
   }, [animate, skill.percentage]);
 
   return (
-    <div className="card card--skill card--3d">
-      <div className="skill-icon">{/* <Icon /> */}</div>
+    <div
+      className="card card-3d"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="card-icon">
+        <Icon />
+      </div>
 
       <h5 className="card-title">{skill.name}</h5>
 
@@ -234,7 +241,7 @@ function SkillCard({ skill, Icon, animate }) {
           className="skill-bar-fill"
           style={{
             width: `${progress}%`,
-            transition: "width 0.1s linear",
+            transition: "width .1s linear",
           }}
         />
       </div>

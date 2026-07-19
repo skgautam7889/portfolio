@@ -18,6 +18,7 @@ import "react-phone-input-2/lib/style.css";
 import "./Contact.css";
 import { storeContact } from "../services/contactService";
 import { sendContactEmail } from "../services/web3FormsService";
+import { handleMouseLeave, handleMouseMove } from "../utils/general.helper";
 
 const MAX_FILE_SIZE = 50 * 1024 * 1024;
 const PhoneInput = PhoneInputModule.default || PhoneInputModule;
@@ -283,7 +284,9 @@ const Contact = () => {
                   ref={(element) => {
                     cardRefs.current[800 + index] = element;
                   }}
-                  className="card card--contact-info card--3d"
+                  className="card card--contact-info card-3d"
+                   onMouseMove={handleMouseMove}
+                                  onMouseLeave={handleMouseLeave}
                 >
                   <div className="contact-icon">
                     <item.icon />
