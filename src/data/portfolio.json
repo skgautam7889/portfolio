@@ -152,11 +152,6 @@
             "icon": "FaBootstrap"
           },
           {
-            "name": "Tailwind CSS",
-            "percentage": 90,
-            "icon": "SiTailwindcss"
-          },
-          {
             "name": "Redux Toolkit",
             "percentage": 85,
             "icon": "SiRedux"
@@ -222,19 +217,9 @@
             "icon": "FaUserShield"
           },
           {
-            "name": "Python",
-            "percentage": 70,
-            "icon": "FaPython"
-          },
-          {
             "name": "WebSockets",
             "percentage": 80,
             "icon": "FaNetworkWired"
-          },
-          {
-            "name": "Cron Jobs",
-            "percentage": 90,
-            "icon": "FaClock"
           }
         ]
       },
@@ -245,11 +230,6 @@
             "name": "MySQL",
             "percentage": 95,
             "icon": "SiMysql"
-          },
-          {
-            "name": "PostgreSQL",
-            "percentage": 90,
-            "icon": "SiPostgresql"
           },
           {
             "name": "MongoDB",
@@ -272,19 +252,9 @@
         "name": "Hosting & DevOps",
         "skills": [
           {
-            "name": "Git",
-            "percentage": 95,
-            "icon": "FaGitAlt"
-          },
-          {
             "name": "GitHub",
             "percentage": 95,
             "icon": "FaGithub"
-          },
-          {
-            "name": "Docker",
-            "percentage": 75,
-            "icon": "SiDocker"
           },
           {
             "name": "AWS",
@@ -309,11 +279,6 @@
           {
             "name": "cPanel",
             "percentage": 95,
-            "icon": "FaServer"
-          },
-          {
-            "name": "HestiaCP",
-            "percentage": 85,
             "icon": "FaServer"
           },
           {
@@ -370,21 +335,6 @@
             "name": "npm",
             "percentage": 95,
             "icon": "FaNpm"
-          },
-          {
-            "name": "Yarn",
-            "percentage": 85,
-            "icon": "FaYarn"
-          },
-          {
-            "name": "Figma",
-            "percentage": 75,
-            "icon": "FaFigma"
-          },
-          {
-            "name": "Jira",
-            "percentage": 80,
-            "icon": "FaJira"
           }
         ]
       }
