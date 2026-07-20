@@ -135,7 +135,7 @@ const VisitorTracker = () => {
 
                 // Step 3: Get IP address
                 ip = await getIP();
-                console.log("IP Address:", ip);
+                console.log("IP Address:", ip); 
 
                 // Step 4: Get location data from multiple sources
                 const getLocationData = async (ipAddress) => {
