@@ -563,7 +563,7 @@
       "verify": "https://platform.openai.com/"
     }
   ],
-  "projects": [
+  "projectss": [
     {
       "id": 1,
       "title": "Hotel Booking & Channel Manager",
@@ -700,6 +700,326 @@
       "description": "Automated deployment pipeline with Docker, CI/CD, SSL configuration, VPS management, server monitoring, and production optimization.",
       "github": "#",
       "demo": "#"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "BookYourOwn - Hotel Booking Platform",
+      "slug": "bookyourown-hotel-booking",
+      "category": "Laravel",
+      "image": "/images/project/bookyourown.png",
+      "thumbnail": "/images/project/bookyourown.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "Google Hotel Center",
+        "REST API",
+        "XML OTA"
+      ],
+      "description": "Enterprise hotel booking platform with channel manager integration, dynamic room pricing, reservation management, Google Hotel Center connectivity, and OTA XML synchronization.",
+      "github": "",
+      "demo": "https://www.bookyourown.net"
+    },
+    {
+      "id": 2,
+      "title": "LawChatGPT - AI Legal Assistant",
+      "slug": "lawchatgpt-ai-assistant",
+      "category": "AI",
+      "image": "/images/project/lawchatgpt.png",
+      "thumbnail": "/images/project/lawchatgpt.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "OpenAI",
+        "REST API",
+        "MySQL"
+      ],
+      "description": "AI-powered legal assistant enabling intelligent document analysis, legal Q&A, user dashboard, AI chat, and workflow automation for legal professionals.",
+      "github": "",
+      "demo": "https://lawchatgpt.com"
+    },
+    {
+      "id": 3,
+      "title": "Reliant Staffing Management System",
+      "slug": "reliant-staffing-management",
+      "category": "Laravel",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "Bootstrap"
+      ],
+      "description": "Recruitment and staffing management platform with candidate tracking, employee management, client management, reporting, and workflow automation.",
+      "github": "",
+      "demo": "https://staging.reliantstaffing.co"
+    },
+    {
+      "id": 4,
+      "title": "eLineHR - HR & Payroll Platform",
+      "slug": "elinehr-platform",
+      "category": "Laravel",
+      "image": "/images/project/elinehr.png",
+      "thumbnail": "/images/project/elinehr.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "REST API"
+      ],
+      "description": "Complete HRMS solution featuring employee records, attendance, payroll, leave management, recruitment, and performance monitoring.",
+      "github": "",
+      "demo": "https://elinehr.com"
+    },
+    {
+      "id": 5,
+      "title": "QuickToJobs - Job Portal",
+      "slug": "quicktojobs",
+      "category": "Laravel",
+      "image": "/images/project/quicktojobs.png",
+      "thumbnail": "/images/project/quicktojobs.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "REST API"
+      ],
+      "description": "Modern recruitment portal allowing employers to post jobs, manage applicants, schedule interviews, and track hiring processes.",
+      "github": "",
+      "demo": "https://www.quicktojobs.com"
+    },
+    {
+      "id": 6,
+      "title": "Yoppi - AI Website Builder",
+      "slug": "yoppi-ai-website-builder",
+      "category": "AI",
+      "image": "/images/project/yoppi.png",
+      "thumbnail": "/images/project/yoppi.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "REST API",
+        "WordPress",
+        "Elementor",
+        "AI Integration"
+      ],
+      "description": "Developed an AI-powered WordPress website builder that enables users to generate complete websites by simply entering a website name and description. Built with Laravel and React.js, the platform integrates AI-powered content generation, WordPress and Elementor support, user authentication, project management, responsive dashboards, and scalable REST APIs for a seamless website creation experience.",
+      "github": "",
+      "demo": "https://yoppi.io"
+    },
+    {
+      "id": 8,
+      "title": "Marketplace & eCommerce Solutions",
+      "slug": "marketplace-ecommerce",
+      "category": "E-Commerce",
+      "image": "/images/project/marketplace-ecommerce.png",
+      "thumbnail": "/images/project/marketplace-ecommerce.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "Stripe"
+      ],
+      "description": "Developed multiple eCommerce and marketplace solutions including online stores, inventory management, order processing, vendor management, and payment integration.",
+      "github": "",
+      "demo": "https://marketplace.tylatwist.com"
+    },
+    {
+      "id": 9,
+      "title": "Hari Trust Donation Platform",
+      "slug": "hari-trust-platform",
+      "category": "Laravel",
+      "image": "/images/project/hari-trust-platform.png",
+      "thumbnail": "/images/project/hari-trust-platform.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "Payment Gateway",
+        "MySQL"
+      ],
+      "description": "Donation and grocery assistance platform supporting online donations, beneficiary management, campaigns, payment processing, and administration.",
+      "github": "",
+      "demo": "https://haritrust.org"
+    },
+    {
+      "id": 10,
+      "title": "SkyG Radio Streaming Platform",
+      "slug": "skygradio",
+      "category": "Admin Panel",
+      "image": "/images/project/skygradio.png",
+      "thumbnail": "/images/project/skygradio.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "Streaming",
+        "REST API"
+      ],
+      "description": "Online radio streaming platform featuring live streaming, media management, responsive UI, and content administration.",
+      "github": "",
+      "demo": "https://skygradio.com"
+    },
+    {
+      "id": 11,
+      "title": "Orange Moon Social Platform",
+      "slug": "orange-moon",
+      "category": "Laravel",
+      "image": "/images/project/orange-moon.png",
+      "thumbnail": "/images/project/orange-moon.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "REST API"
+      ],
+      "description": "Custom web application with secure authentication, dashboard, user management, notifications, and scalable backend services.",
+      "github": "",
+      "demo": "https://staging.orangemoonsss.com/login"
+    },
+    {
+      "id": 12,
+      "title": "Tracking Software Dashboard",
+      "slug": "tracking-software-dashboard",
+      "category": "React",
+      "image": "/images/project/tracking.png",
+      "thumbnail": "/images/project/tracking.png",
+      "technologies": [
+        "React.js",
+        "TypeScript",
+        "Bootstrap",
+        "Charts"
+      ],
+      "description": "Interactive tracking dashboard with analytics, reporting, responsive UI, charts, and real-time monitoring features.",
+      "github": "https://github.com/skgautam7889",
+      "demo": "https://tracking-software-app.netlify.app"
+    },
+    {
+      "id": 13,
+      "title": "Stationary For You - eCommerce Store",
+      "slug": "stationary-for-you",
+      "category": "E-Commerce",
+      "image": "/images/project/stationary.png",
+      "thumbnail": "/images/project/stationary.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "REST API",
+        "Bootstrap"
+      ],
+      "description": "Complete online stationery shopping platform featuring product catalog, shopping cart, secure checkout, order management, customer accounts, and responsive design.",
+      "github": "",
+      "demo": "https://stationaryforyou.com/"
+    },
+    {
+      "id": 14,
+      "title": "Stationary For You - Admin Dashboard",
+      "slug": "stationary-admin-dashboard",
+      "category": "Admin Panel",
+      "image": "/images/project/stationary-admin.png",
+      "thumbnail": "/images/project/stationary-admin.png",
+      "technologies": [
+        "Laravel",
+        "MySQL",
+        "Bootstrap",
+        "REST API"
+      ],
+      "description": "Powerful administration panel for managing products, categories, inventory, orders, customers, coupons, reports, and website settings.",
+      "github": "",
+      "demo": "https://backend.stationaryforyou.com/admin/login"
+    },
+    {
+      "id": 15,
+      "title": "Hari Trust Grocery Distribution System",
+      "slug": "hari-trust-grocery",
+      "category": "NGO",
+      "image": "/images/project/hari-trust-grocery.png",
+      "thumbnail": "/images/project/hari-trust-grocery.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "MySQL",
+        "REST API"
+      ],
+      "description": "Digital grocery distribution platform developed for charitable organizations to manage beneficiaries, grocery requests, donations, inventory, and delivery operations.",
+      "github": "",
+      "demo": "https://grocery.haritrust.org/"
+    },
+    {
+      "id": 16,
+      "title": "HME Company Corporate Website",
+      "slug": "hme-company",
+      "category": "Corporate",
+      "image": "/images/project/hme-company.png",
+      "thumbnail": "/images/project/hme-company.png",
+      "technologies": [
+        "Laravel",
+        "React.js",
+        "Bootstrap",
+        "MySQL"
+      ],
+      "description": "Professional corporate website with responsive design, service management, inquiry forms, SEO optimization, and content management features.",
+      "github": "",
+      "demo": "https://hmecompany.com/"
+    },
+    {
+      "id": 17,
+      "title": "Multi-Platform REST API Development",
+      "slug": "rest-api-development",
+      "category": "Laravel",
+      "image": "/images/project/rest-api.png",
+      "thumbnail": "/images/project/rest-api.png",
+      "technologies": [
+        "Laravel",
+        "REST API",
+        "JWT",
+        "MySQL",
+        "OAuth"
+      ],
+      "description": "Designed and developed secure RESTful APIs powering hotel booking systems, HR platforms, AI applications, job portals, eCommerce platforms, and mobile applications with authentication and third-party integrations.",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": 18,
+      "title": "Payment Gateway & Third-Party Integrations",
+      "slug": "payment-integrations",
+      "category": "Integration",
+      "image": "/images/project/payment-integrations.png",
+      "thumbnail": "/images/project/payment-integrations.png",
+      "technologies": [
+        "Laravel",
+        "Stripe",
+        "Razorpay",
+        "PayPal",
+        "REST API"
+      ],
+      "description": "Integrated multiple third-party services including payment gateways, Google Hotel Center, AI APIs, SMS services, email services, authentication systems, and external business APIs across enterprise applications.",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": 19,
+      "title": "Worksuite ERP & Business Management",
+      "slug": "worksuite-erp-business-management",
+      "category": "Admin Panel",
+      "image": "/images/project/worksuite.png",
+      "thumbnail": "/images/project/worksuite.png",
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Bootstrap",
+        "JavaScript",
+        "REST API",
+        "jQuery"
+      ],
+      "description": "Enterprise-grade ERP and business management platform with Project Management, CRM, HRM, Employee Management, Attendance, Payroll, Finance, Invoicing, Time Tracking, Support Tickets, Reports, Role-Based Access Control (RBAC), Notifications, and Dashboard Analytics.",
+      "github": "",
+      "demo": "https://demo.worksuite.biz/account/dashboard"
     }
   ],
   "testimonials": [

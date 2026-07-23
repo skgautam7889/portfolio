@@ -2073,21 +2073,6 @@ textarea.form-control {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact-form-alert {
     width: 100%;
     margin-bottom: 1rem;
@@ -2377,6 +2362,9 @@ textarea.form-control {
 @media (max-width: 575.98px) {
     .last_name {
         display: none;
+    }
+    .about-image img{
+        height: 500px;
     }
 }
 

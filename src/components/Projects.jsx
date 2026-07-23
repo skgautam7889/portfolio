@@ -44,7 +44,7 @@ const Projects = () => {
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title">{project.title}</h5>
-                                        <p className="card-text">{project.description?.slice(0, 80)}...</p>
+                                        <p className="card-text">{project.description?.slice(0, 200)}...</p>
                                         <div className="card-tech">
                                             {project.technologies?.slice(0, 4).map((tech, tIdx) => (
                                                 <span key={tIdx} className="badge badge--tech">
@@ -63,9 +63,9 @@ const Projects = () => {
                                                     Code
                                                 </a>
                                             )}
-                                            <Link to={`/projects/${project.slug}`} className="btn btn-outline btn-sm">
+                                            {/* <Link to={`/projects/${project.slug}`} className="btn btn-outline btn-sm">
                                                 Details
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
                                 </div>
